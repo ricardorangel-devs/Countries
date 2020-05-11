@@ -118,8 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="minimize_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="antartida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\antartida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oceania" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oceania.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="america" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\america.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,22 +139,22 @@
   <data name="asia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\asia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="africa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\africa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="outros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\outros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="oceania" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oceania.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="restore_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restore_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maximize_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximize_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimize_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="africa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\africa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restore_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restore_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_window_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_window_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="indisponivel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\indisponivel.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

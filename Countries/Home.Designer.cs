@@ -29,35 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation8 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.MenuTop = new System.Windows.Forms.Panel();
-            this.btn_Maximize = new System.Windows.Forms.PictureBox();
-            this.btn_Restore = new System.Windows.Forms.PictureBox();
-            this.btn_Minimize = new System.Windows.Forms.PictureBox();
-            this.btn_Close = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btn_Oceania = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Europe = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Antarctica = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_America = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Africa = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Asia = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
             this.SelectionBarWrapper = new System.Windows.Forms.Panel();
-            this.btn_MinimizeSelectionSideBarWrapper = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.SelectionBar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.cb_Countries = new System.Windows.Forms.ComboBox();
             this.CurveSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AnimationSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Wrapper = new System.Windows.Forms.Panel();
@@ -81,7 +63,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pic_Flag = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.AnimationSidebarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.RadioPanelChart = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -91,21 +72,41 @@
             this.AnimationSelectionBar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.AnimationSelectionBarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.CurvePanelChart = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pic_Flag = new System.Windows.Forms.PictureBox();
+            this.SelectionBar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_MinimizeSelectionSideBarWrapper = new System.Windows.Forms.PictureBox();
+            this.cb_Countries = new System.Windows.Forms.ComboBox();
+            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_Outros = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Oceania = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Europe = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Antarctica = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_America = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Africa = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Asia = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
             this.ProgressBar = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.btn_Maximize = new System.Windows.Forms.PictureBox();
+            this.btn_Restore = new System.Windows.Forms.PictureBox();
+            this.btn_Minimize = new System.Windows.Forms.PictureBox();
+            this.btn_Close = new System.Windows.Forms.PictureBox();
+            this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.MenuTop.SuspendLayout();
+            this.SidebarWrapper.SuspendLayout();
+            this.SelectionBarWrapper.SuspendLayout();
+            this.Wrapper.SuspendLayout();
+            this.PanelChart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).BeginInit();
+            this.SelectionBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).BeginInit();
+            this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).BeginInit();
-            this.SidebarWrapper.SuspendLayout();
-            this.Sidebar.SuspendLayout();
-            this.SelectionBarWrapper.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).BeginInit();
-            this.SelectionBar.SuspendLayout();
-            this.Wrapper.SuspendLayout();
-            this.PanelChart.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuTop
@@ -128,71 +129,6 @@
             this.MenuTop.Size = new System.Drawing.Size(1350, 80);
             this.MenuTop.TabIndex = 1;
             // 
-            // btn_Maximize
-            // 
-            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Maximize.Image = global::Countries.Properties.Resources.maximize_window_50px;
-            this.btn_Maximize.Location = new System.Drawing.Point(1261, 24);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Maximize.TabIndex = 9;
-            this.btn_Maximize.TabStop = false;
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
-            // 
-            // btn_Restore
-            // 
-            this.btn_Restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Restore.Image = global::Countries.Properties.Resources.restore_window_50px;
-            this.btn_Restore.Location = new System.Drawing.Point(1261, 24);
-            this.btn_Restore.Name = "btn_Restore";
-            this.btn_Restore.Size = new System.Drawing.Size(30, 30);
-            this.btn_Restore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Restore.TabIndex = 8;
-            this.btn_Restore.TabStop = false;
-            this.btn_Restore.Visible = false;
-            this.btn_Restore.Click += new System.EventHandler(this.btn_Restore_Click);
-            // 
-            // btn_Minimize
-            // 
-            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Minimize.Image = global::Countries.Properties.Resources.minimize_window_50px;
-            this.btn_Minimize.Location = new System.Drawing.Point(1225, 24);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Minimize.TabIndex = 7;
-            this.btn_Minimize.TabStop = false;
-            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
-            // 
-            // btn_Close
-            // 
-            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Close.Image = global::Countries.Properties.Resources.close_window_50px;
-            this.btn_Close.Location = new System.Drawing.Point(1297, 24);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(30, 30);
-            this.btn_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Close.TabIndex = 6;
-            this.btn_Close.TabStop = false;
-            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -208,21 +144,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "DASHBOARD";
             // 
-            // MenuSidebar
-            // 
-            this.AnimationSelectionBar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.MenuSidebar.Image = ((System.Drawing.Image)(resources.GetObject("MenuSidebar.Image")));
-            this.MenuSidebar.Location = new System.Drawing.Point(43, 25);
-            this.MenuSidebar.Name = "MenuSidebar";
-            this.MenuSidebar.Size = new System.Drawing.Size(35, 35);
-            this.MenuSidebar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MenuSidebar.TabIndex = 2;
-            this.MenuSidebar.TabStop = false;
-            this.MenuSidebar.Click += new System.EventHandler(this.MenuSidebar_Click);
-            // 
             // SidebarWrapper
             // 
             this.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
@@ -235,7 +156,7 @@
             this.SidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidebarWrapper.Location = new System.Drawing.Point(0, 80);
             this.SidebarWrapper.Name = "SidebarWrapper";
-            this.SidebarWrapper.Size = new System.Drawing.Size(120, 714);
+            this.SidebarWrapper.Size = new System.Drawing.Size(120, 769);
             this.SidebarWrapper.TabIndex = 2;
             // 
             // bunifuSeparator1
@@ -256,340 +177,6 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // Sidebar
-            // 
-            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
-            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Sidebar.Controls.Add(this.btn_Oceania);
-            this.Sidebar.Controls.Add(this.btn_Europe);
-            this.Sidebar.Controls.Add(this.btn_Antarctica);
-            this.Sidebar.Controls.Add(this.btn_America);
-            this.Sidebar.Controls.Add(this.btn_Africa);
-            this.Sidebar.Controls.Add(this.bunifuFlatButton4);
-            this.Sidebar.Controls.Add(this.btn_Asia);
-            this.Sidebar.Controls.Add(this.label2);
-            this.Sidebar.Controls.Add(this.LineaSidebar);
-            this.AnimationSelectionBarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
-            this.Sidebar.GradientBottomLeft = System.Drawing.Color.Aqua;
-            this.Sidebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Sidebar.GradientTopLeft = System.Drawing.Color.Black;
-            this.Sidebar.GradientTopRight = System.Drawing.Color.Black;
-            this.Sidebar.Location = new System.Drawing.Point(16, 24);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Quality = 10;
-            this.Sidebar.Size = new System.Drawing.Size(90, 678);
-            this.Sidebar.TabIndex = 0;
-            // 
-            // btn_Oceania
-            // 
-            this.btn_Oceania.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Oceania.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Oceania.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Oceania.BorderRadius = 0;
-            this.btn_Oceania.ButtonText = "      OCEANIA";
-            this.btn_Oceania.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Oceania.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Oceania.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Oceania.Iconimage = global::Countries.Properties.Resources.oceania;
-            this.btn_Oceania.Iconimage_right = null;
-            this.btn_Oceania.Iconimage_right_Selected = null;
-            this.btn_Oceania.Iconimage_Selected = null;
-            this.btn_Oceania.IconMarginLeft = 0;
-            this.btn_Oceania.IconMarginRight = 0;
-            this.btn_Oceania.IconRightVisible = true;
-            this.btn_Oceania.IconRightZoom = 0D;
-            this.btn_Oceania.IconVisible = true;
-            this.btn_Oceania.IconZoom = 130D;
-            this.btn_Oceania.IsTab = false;
-            this.btn_Oceania.Location = new System.Drawing.Point(0, 75);
-            this.btn_Oceania.Name = "btn_Oceania";
-            this.btn_Oceania.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_Oceania.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btn_Oceania.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Oceania.selected = false;
-            this.btn_Oceania.Size = new System.Drawing.Size(270, 88);
-            this.btn_Oceania.TabIndex = 19;
-            this.btn_Oceania.Text = "      OCEANIA";
-            this.btn_Oceania.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Oceania.Textcolor = System.Drawing.Color.White;
-            this.btn_Oceania.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Oceania.Click += new System.EventHandler(this.btn_Oceania_Click);
-            // 
-            // btn_Europe
-            // 
-            this.btn_Europe.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Europe.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Europe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Europe.BorderRadius = 0;
-            this.btn_Europe.ButtonText = "      EUROPE";
-            this.btn_Europe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Europe.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Europe.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Europe.Iconimage = global::Countries.Properties.Resources.europe;
-            this.btn_Europe.Iconimage_right = null;
-            this.btn_Europe.Iconimage_right_Selected = null;
-            this.btn_Europe.Iconimage_Selected = null;
-            this.btn_Europe.IconMarginLeft = 0;
-            this.btn_Europe.IconMarginRight = 0;
-            this.btn_Europe.IconRightVisible = true;
-            this.btn_Europe.IconRightZoom = 0D;
-            this.btn_Europe.IconVisible = true;
-            this.btn_Europe.IconZoom = 130D;
-            this.btn_Europe.IsTab = false;
-            this.btn_Europe.Location = new System.Drawing.Point(0, 169);
-            this.btn_Europe.Name = "btn_Europe";
-            this.btn_Europe.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_Europe.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btn_Europe.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Europe.selected = true;
-            this.btn_Europe.Size = new System.Drawing.Size(270, 88);
-            this.btn_Europe.TabIndex = 18;
-            this.btn_Europe.Text = "      EUROPE";
-            this.btn_Europe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Europe.Textcolor = System.Drawing.Color.White;
-            this.btn_Europe.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Europe.Click += new System.EventHandler(this.btn_Europe_Click);
-            // 
-            // btn_Antarctica
-            // 
-            this.btn_Antarctica.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Antarctica.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Antarctica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Antarctica.BorderRadius = 0;
-            this.btn_Antarctica.ButtonText = "      POLAR";
-            this.btn_Antarctica.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Antarctica.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Antarctica.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Antarctica.Iconimage = global::Countries.Properties.Resources.antartida;
-            this.btn_Antarctica.Iconimage_right = null;
-            this.btn_Antarctica.Iconimage_right_Selected = null;
-            this.btn_Antarctica.Iconimage_Selected = null;
-            this.btn_Antarctica.IconMarginLeft = 0;
-            this.btn_Antarctica.IconMarginRight = 0;
-            this.btn_Antarctica.IconRightVisible = true;
-            this.btn_Antarctica.IconRightZoom = 0D;
-            this.btn_Antarctica.IconVisible = true;
-            this.btn_Antarctica.IconZoom = 130D;
-            this.btn_Antarctica.IsTab = false;
-            this.btn_Antarctica.Location = new System.Drawing.Point(0, 545);
-            this.btn_Antarctica.Name = "btn_Antarctica";
-            this.btn_Antarctica.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_Antarctica.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btn_Antarctica.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Antarctica.selected = false;
-            this.btn_Antarctica.Size = new System.Drawing.Size(270, 88);
-            this.btn_Antarctica.TabIndex = 17;
-            this.btn_Antarctica.Text = "      POLAR";
-            this.btn_Antarctica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Antarctica.Textcolor = System.Drawing.Color.White;
-            this.btn_Antarctica.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Antarctica.Click += new System.EventHandler(this.btn_Antarctica_Click);
-            // 
-            // btn_America
-            // 
-            this.btn_America.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_America.BackColor = System.Drawing.Color.Transparent;
-            this.btn_America.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_America.BorderRadius = 0;
-            this.btn_America.ButtonText = "      AMERICA";
-            this.btn_America.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
-            this.btn_America.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_America.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_America.Iconimage = global::Countries.Properties.Resources.america;
-            this.btn_America.Iconimage_right = null;
-            this.btn_America.Iconimage_right_Selected = null;
-            this.btn_America.Iconimage_Selected = null;
-            this.btn_America.IconMarginLeft = 0;
-            this.btn_America.IconMarginRight = 0;
-            this.btn_America.IconRightVisible = true;
-            this.btn_America.IconRightZoom = 0D;
-            this.btn_America.IconVisible = true;
-            this.btn_America.IconZoom = 130D;
-            this.btn_America.IsTab = false;
-            this.btn_America.Location = new System.Drawing.Point(0, 451);
-            this.btn_America.Name = "btn_America";
-            this.btn_America.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_America.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btn_America.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_America.selected = false;
-            this.btn_America.Size = new System.Drawing.Size(270, 88);
-            this.btn_America.TabIndex = 16;
-            this.btn_America.Text = "      AMERICA";
-            this.btn_America.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_America.Textcolor = System.Drawing.Color.White;
-            this.btn_America.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_America.Click += new System.EventHandler(this.btn_America_Click);
-            // 
-            // btn_Africa
-            // 
-            this.btn_Africa.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Africa.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Africa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Africa.BorderRadius = 0;
-            this.btn_Africa.ButtonText = "      AFRICA";
-            this.btn_Africa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Africa.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Africa.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Africa.Iconimage = global::Countries.Properties.Resources.africa;
-            this.btn_Africa.Iconimage_right = null;
-            this.btn_Africa.Iconimage_right_Selected = null;
-            this.btn_Africa.Iconimage_Selected = null;
-            this.btn_Africa.IconMarginLeft = 0;
-            this.btn_Africa.IconMarginRight = 0;
-            this.btn_Africa.IconRightVisible = true;
-            this.btn_Africa.IconRightZoom = 0D;
-            this.btn_Africa.IconVisible = true;
-            this.btn_Africa.IconZoom = 130D;
-            this.btn_Africa.IsTab = false;
-            this.btn_Africa.Location = new System.Drawing.Point(0, 357);
-            this.btn_Africa.Name = "btn_Africa";
-            this.btn_Africa.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_Africa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btn_Africa.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Africa.selected = false;
-            this.btn_Africa.Size = new System.Drawing.Size(270, 88);
-            this.btn_Africa.TabIndex = 15;
-            this.btn_Africa.Text = "      AFRICA";
-            this.btn_Africa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Africa.Textcolor = System.Drawing.Color.White;
-            this.btn_Africa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Africa.Click += new System.EventHandler(this.btn_Africa_Click);
-            // 
-            // bunifuFlatButton4
-            // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "      ASIA";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton4.Iconimage")));
-            this.bunifuFlatButton4.Iconimage_right = null;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 0;
-            this.bunifuFlatButton4.IconMarginRight = 0;
-            this.bunifuFlatButton4.IconRightVisible = true;
-            this.bunifuFlatButton4.IconRightZoom = 0D;
-            this.bunifuFlatButton4.IconVisible = true;
-            this.bunifuFlatButton4.IconZoom = 75D;
-            this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(10, 373);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(249, 88);
-            this.bunifuFlatButton4.TabIndex = 14;
-            this.bunifuFlatButton4.Text = "      ASIA";
-            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.LightGray;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btn_Asia
-            // 
-            this.btn_Asia.Activecolor = System.Drawing.Color.Transparent;
-            this.btn_Asia.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Asia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Asia.BorderRadius = 0;
-            this.btn_Asia.ButtonText = "      ASIA";
-            this.btn_Asia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimationSelectionBar.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Asia.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Asia.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Asia.Iconimage = global::Countries.Properties.Resources.asia;
-            this.btn_Asia.Iconimage_right = null;
-            this.btn_Asia.Iconimage_right_Selected = null;
-            this.btn_Asia.Iconimage_Selected = null;
-            this.btn_Asia.IconMarginLeft = 0;
-            this.btn_Asia.IconMarginRight = 0;
-            this.btn_Asia.IconRightVisible = true;
-            this.btn_Asia.IconRightZoom = 0D;
-            this.btn_Asia.IconVisible = true;
-            this.btn_Asia.IconZoom = 130D;
-            this.btn_Asia.IsTab = false;
-            this.btn_Asia.Location = new System.Drawing.Point(0, 263);
-            this.btn_Asia.Name = "btn_Asia";
-            this.btn_Asia.Normalcolor = System.Drawing.Color.Transparent;
-            this.btn_Asia.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.btn_Asia.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Asia.selected = false;
-            this.btn_Asia.Size = new System.Drawing.Size(270, 88);
-            this.btn_Asia.TabIndex = 13;
-            this.btn_Asia.Text = "      ASIA";
-            this.btn_Asia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Asia.Textcolor = System.Drawing.Color.White;
-            this.btn_Asia.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Asia.Click += new System.EventHandler(this.btn_Asia_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(128, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "CONTINENTS";
-            // 
-            // LineaSidebar
-            // 
-            this.LineaSidebar.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBarBack.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.LineaSidebar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.LineaSidebar.LineThickness = 1;
-            this.LineaSidebar.Location = new System.Drawing.Point(7, 68);
-            this.LineaSidebar.Name = "LineaSidebar";
-            this.LineaSidebar.Size = new System.Drawing.Size(252, 1);
-            this.LineaSidebar.TabIndex = 8;
-            this.LineaSidebar.Transparency = 255;
-            this.LineaSidebar.Vertical = false;
-            // 
             // SelectionBarWrapper
             // 
             this.SelectionBarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
@@ -602,24 +189,8 @@
             this.SelectionBarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.SelectionBarWrapper.Location = new System.Drawing.Point(120, 80);
             this.SelectionBarWrapper.Name = "SelectionBarWrapper";
-            this.SelectionBarWrapper.Size = new System.Drawing.Size(0, 714);
+            this.SelectionBarWrapper.Size = new System.Drawing.Size(0, 769);
             this.SelectionBarWrapper.TabIndex = 3;
-            // 
-            // btn_MinimizeSelectionSideBarWrapper
-            // 
-            this.btn_MinimizeSelectionSideBarWrapper.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.btn_MinimizeSelectionSideBarWrapper.Image = global::Countries.Properties.Resources.minimize_window_50px;
-            this.btn_MinimizeSelectionSideBarWrapper.Location = new System.Drawing.Point(275, 3);
-            this.btn_MinimizeSelectionSideBarWrapper.Name = "btn_MinimizeSelectionSideBarWrapper";
-            this.btn_MinimizeSelectionSideBarWrapper.Size = new System.Drawing.Size(20, 20);
-            this.btn_MinimizeSelectionSideBarWrapper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_MinimizeSelectionSideBarWrapper.TabIndex = 10;
-            this.btn_MinimizeSelectionSideBarWrapper.TabStop = false;
-            this.btn_MinimizeSelectionSideBarWrapper.Click += new System.EventHandler(this.btn_MinimizeSelectionSideBarWrapper_Click);
             // 
             // bunifuSeparator3
             // 
@@ -637,44 +208,6 @@
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
             // 
-            // SelectionBar
-            // 
-            this.SelectionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.SelectionBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SelectionBar.BackgroundImage")));
-            this.SelectionBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SelectionBar.Controls.Add(this.btn_MinimizeSelectionSideBarWrapper);
-            this.SelectionBar.Controls.Add(this.cb_Countries);
-            this.AnimationSelectionBarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.SelectionBar.GradientBottomLeft = System.Drawing.Color.Aqua;
-            this.SelectionBar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.SelectionBar.GradientTopLeft = System.Drawing.Color.Black;
-            this.SelectionBar.GradientTopRight = System.Drawing.Color.Black;
-            this.SelectionBar.Location = new System.Drawing.Point(10, 26);
-            this.SelectionBar.Name = "SelectionBar";
-            this.SelectionBar.Quality = 10;
-            this.SelectionBar.Size = new System.Drawing.Size(300, 69);
-            this.SelectionBar.TabIndex = 20;
-            // 
-            // cb_Countries
-            // 
-            this.AnimationSelectionBar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.cb_Countries.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Countries.DropDownWidth = 290;
-            this.cb_Countries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_Countries.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Countries.FormattingEnabled = true;
-            this.cb_Countries.Location = new System.Drawing.Point(5, 28);
-            this.cb_Countries.Name = "cb_Countries";
-            this.cb_Countries.Size = new System.Drawing.Size(290, 32);
-            this.cb_Countries.TabIndex = 0;
-            this.cb_Countries.SelectedIndexChanged += new System.EventHandler(this.cb_Countries_SelectedIndexChanged);
-            // 
             // CurveSidebar
             // 
             this.CurveSidebar.ElipseRadius = 7;
@@ -684,22 +217,22 @@
             // 
             this.AnimationSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.AnimationSidebar.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 20;
-            animation7.Padding = new System.Windows.Forms.Padding(30);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 0F;
-            this.AnimationSidebar.DefaultAnimation = animation7;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 20;
+            animation3.Padding = new System.Windows.Forms.Padding(30);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.AnimationSidebar.DefaultAnimation = animation3;
             // 
             // Wrapper
             // 
@@ -713,7 +246,7 @@
             this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrapper.Location = new System.Drawing.Point(120, 80);
             this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(1230, 714);
+            this.Wrapper.Size = new System.Drawing.Size(1230, 769);
             this.Wrapper.TabIndex = 4;
             // 
             // bunifuSeparator2
@@ -729,7 +262,7 @@
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(9, 9);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(1209, 10);
+            this.bunifuSeparator2.Size = new System.Drawing.Size(1569, 10);
             this.bunifuSeparator2.TabIndex = 11;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
@@ -763,7 +296,7 @@
             this.AnimationSelectionBar.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
             this.PanelChart.Location = new System.Drawing.Point(9, 24);
             this.PanelChart.Name = "PanelChart";
-            this.PanelChart.Size = new System.Drawing.Size(710, 678);
+            this.PanelChart.Size = new System.Drawing.Size(710, 733);
             this.PanelChart.TabIndex = 1;
             // 
             // lbl_CountryLanguages
@@ -1052,20 +585,6 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Gine Index:";
             // 
-            // pic_Flag
-            // 
-            this.pic_Flag.BackColor = System.Drawing.Color.White;
-            this.AnimationSelectionBar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.pic_Flag.Location = new System.Drawing.Point(19, 16);
-            this.pic_Flag.Name = "pic_Flag";
-            this.pic_Flag.Size = new System.Drawing.Size(300, 200);
-            this.pic_Flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Flag.TabIndex = 17;
-            this.pic_Flag.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1086,22 +605,22 @@
             // 
             this.AnimationSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimationSidebarBack.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 0F;
-            this.AnimationSidebarBack.DefaultAnimation = animation6;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.AnimationSidebarBack.DefaultAnimation = animation2;
             // 
             // RadioPanelChart
             // 
@@ -1129,48 +648,491 @@
             // 
             this.AnimationSelectionBar.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.AnimationSelectionBar.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 20;
-            animation8.Padding = new System.Windows.Forms.Padding(30);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 0F;
-            this.AnimationSelectionBar.DefaultAnimation = animation8;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 20;
+            animation4.Padding = new System.Windows.Forms.Padding(30);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.AnimationSelectionBar.DefaultAnimation = animation4;
             // 
             // AnimationSelectionBarBack
             // 
             this.AnimationSelectionBarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimationSelectionBarBack.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.AnimationSelectionBarBack.DefaultAnimation = animation5;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimationSelectionBarBack.DefaultAnimation = animation1;
             // 
             // CurvePanelChart
             // 
             this.CurvePanelChart.ElipseRadius = 7;
             this.CurvePanelChart.TargetControl = this.PanelChart;
+            // 
+            // pic_Flag
+            // 
+            this.pic_Flag.BackColor = System.Drawing.Color.White;
+            this.AnimationSelectionBar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.pic_Flag.Location = new System.Drawing.Point(19, 16);
+            this.pic_Flag.Name = "pic_Flag";
+            this.pic_Flag.Size = new System.Drawing.Size(300, 200);
+            this.pic_Flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Flag.TabIndex = 17;
+            this.pic_Flag.TabStop = false;
+            // 
+            // SelectionBar
+            // 
+            this.SelectionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.SelectionBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SelectionBar.BackgroundImage")));
+            this.SelectionBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SelectionBar.Controls.Add(this.btn_MinimizeSelectionSideBarWrapper);
+            this.SelectionBar.Controls.Add(this.cb_Countries);
+            this.AnimationSelectionBarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.SelectionBar.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.SelectionBar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SelectionBar.GradientTopLeft = System.Drawing.Color.Black;
+            this.SelectionBar.GradientTopRight = System.Drawing.Color.Black;
+            this.SelectionBar.Location = new System.Drawing.Point(10, 26);
+            this.SelectionBar.Name = "SelectionBar";
+            this.SelectionBar.Quality = 10;
+            this.SelectionBar.Size = new System.Drawing.Size(300, 69);
+            this.SelectionBar.TabIndex = 20;
+            // 
+            // btn_MinimizeSelectionSideBarWrapper
+            // 
+            this.btn_MinimizeSelectionSideBarWrapper.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_MinimizeSelectionSideBarWrapper.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.btn_MinimizeSelectionSideBarWrapper.Image = global::Countries.Properties.Resources.minimize_window_50px;
+            this.btn_MinimizeSelectionSideBarWrapper.Location = new System.Drawing.Point(275, 3);
+            this.btn_MinimizeSelectionSideBarWrapper.Name = "btn_MinimizeSelectionSideBarWrapper";
+            this.btn_MinimizeSelectionSideBarWrapper.Size = new System.Drawing.Size(20, 20);
+            this.btn_MinimizeSelectionSideBarWrapper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_MinimizeSelectionSideBarWrapper.TabIndex = 10;
+            this.btn_MinimizeSelectionSideBarWrapper.TabStop = false;
+            this.btn_MinimizeSelectionSideBarWrapper.Click += new System.EventHandler(this.btn_MinimizeSelectionSideBarWrapper_Click);
+            // 
+            // cb_Countries
+            // 
+            this.AnimationSelectionBar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.cb_Countries.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Countries.DropDownWidth = 290;
+            this.cb_Countries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_Countries.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Countries.FormattingEnabled = true;
+            this.cb_Countries.Location = new System.Drawing.Point(5, 28);
+            this.cb_Countries.Name = "cb_Countries";
+            this.cb_Countries.Size = new System.Drawing.Size(290, 32);
+            this.cb_Countries.TabIndex = 0;
+            this.cb_Countries.SelectedIndexChanged += new System.EventHandler(this.cb_Countries_SelectedIndexChanged);
+            // 
+            // Sidebar
+            // 
+            this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.Sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
+            this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.Controls.Add(this.btn_Outros);
+            this.Sidebar.Controls.Add(this.btn_Oceania);
+            this.Sidebar.Controls.Add(this.btn_Europe);
+            this.Sidebar.Controls.Add(this.btn_Antarctica);
+            this.Sidebar.Controls.Add(this.btn_America);
+            this.Sidebar.Controls.Add(this.btn_Africa);
+            this.Sidebar.Controls.Add(this.bunifuFlatButton4);
+            this.Sidebar.Controls.Add(this.btn_Asia);
+            this.Sidebar.Controls.Add(this.label2);
+            this.Sidebar.Controls.Add(this.LineaSidebar);
+            this.AnimationSelectionBarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.Sidebar, BunifuAnimatorNS.DecorationType.None);
+            this.Sidebar.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.Sidebar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Sidebar.GradientTopLeft = System.Drawing.Color.Black;
+            this.Sidebar.GradientTopRight = System.Drawing.Color.Black;
+            this.Sidebar.Location = new System.Drawing.Point(16, 24);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Quality = 10;
+            this.Sidebar.Size = new System.Drawing.Size(90, 733);
+            this.Sidebar.TabIndex = 0;
+            // 
+            // btn_Outros
+            // 
+            this.btn_Outros.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Outros.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Outros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Outros.BorderRadius = 0;
+            this.btn_Outros.ButtonText = "      OUTROS";
+            this.btn_Outros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_Outros, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Outros, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Outros, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Outros, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Outros.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Outros.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Outros.Iconimage = global::Countries.Properties.Resources.outros;
+            this.btn_Outros.Iconimage_right = null;
+            this.btn_Outros.Iconimage_right_Selected = null;
+            this.btn_Outros.Iconimage_Selected = null;
+            this.btn_Outros.IconMarginLeft = 0;
+            this.btn_Outros.IconMarginRight = 0;
+            this.btn_Outros.IconRightVisible = true;
+            this.btn_Outros.IconRightZoom = 0D;
+            this.btn_Outros.IconVisible = true;
+            this.btn_Outros.IconZoom = 130D;
+            this.btn_Outros.IsTab = false;
+            this.btn_Outros.Location = new System.Drawing.Point(0, 639);
+            this.btn_Outros.Name = "btn_Outros";
+            this.btn_Outros.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Outros.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_Outros.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Outros.selected = false;
+            this.btn_Outros.Size = new System.Drawing.Size(270, 88);
+            this.btn_Outros.TabIndex = 20;
+            this.btn_Outros.Text = "      OUTROS";
+            this.btn_Outros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Outros.Textcolor = System.Drawing.Color.White;
+            this.btn_Outros.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Outros.Click += new System.EventHandler(this.btn_Outros_Click);
+            // 
+            // btn_Oceania
+            // 
+            this.btn_Oceania.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Oceania.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Oceania.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Oceania.BorderRadius = 0;
+            this.btn_Oceania.ButtonText = "      OCEANIA";
+            this.btn_Oceania.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Oceania, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Oceania.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Oceania.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Oceania.Iconimage = global::Countries.Properties.Resources.oceania;
+            this.btn_Oceania.Iconimage_right = null;
+            this.btn_Oceania.Iconimage_right_Selected = null;
+            this.btn_Oceania.Iconimage_Selected = null;
+            this.btn_Oceania.IconMarginLeft = 0;
+            this.btn_Oceania.IconMarginRight = 0;
+            this.btn_Oceania.IconRightVisible = true;
+            this.btn_Oceania.IconRightZoom = 0D;
+            this.btn_Oceania.IconVisible = true;
+            this.btn_Oceania.IconZoom = 130D;
+            this.btn_Oceania.IsTab = false;
+            this.btn_Oceania.Location = new System.Drawing.Point(0, 75);
+            this.btn_Oceania.Name = "btn_Oceania";
+            this.btn_Oceania.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Oceania.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_Oceania.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Oceania.selected = false;
+            this.btn_Oceania.Size = new System.Drawing.Size(270, 88);
+            this.btn_Oceania.TabIndex = 19;
+            this.btn_Oceania.Text = "      OCEANIA";
+            this.btn_Oceania.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Oceania.Textcolor = System.Drawing.Color.White;
+            this.btn_Oceania.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Oceania.Click += new System.EventHandler(this.btn_Oceania_Click);
+            // 
+            // btn_Europe
+            // 
+            this.btn_Europe.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Europe.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Europe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Europe.BorderRadius = 0;
+            this.btn_Europe.ButtonText = "      EUROPE";
+            this.btn_Europe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Europe, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Europe.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Europe.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Europe.Iconimage = global::Countries.Properties.Resources.europe;
+            this.btn_Europe.Iconimage_right = null;
+            this.btn_Europe.Iconimage_right_Selected = null;
+            this.btn_Europe.Iconimage_Selected = null;
+            this.btn_Europe.IconMarginLeft = 0;
+            this.btn_Europe.IconMarginRight = 0;
+            this.btn_Europe.IconRightVisible = true;
+            this.btn_Europe.IconRightZoom = 0D;
+            this.btn_Europe.IconVisible = true;
+            this.btn_Europe.IconZoom = 130D;
+            this.btn_Europe.IsTab = false;
+            this.btn_Europe.Location = new System.Drawing.Point(0, 169);
+            this.btn_Europe.Name = "btn_Europe";
+            this.btn_Europe.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Europe.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_Europe.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Europe.selected = true;
+            this.btn_Europe.Size = new System.Drawing.Size(270, 88);
+            this.btn_Europe.TabIndex = 18;
+            this.btn_Europe.Text = "      EUROPE";
+            this.btn_Europe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Europe.Textcolor = System.Drawing.Color.White;
+            this.btn_Europe.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Europe.Click += new System.EventHandler(this.btn_Europe_Click);
+            // 
+            // btn_Antarctica
+            // 
+            this.btn_Antarctica.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Antarctica.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Antarctica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Antarctica.BorderRadius = 0;
+            this.btn_Antarctica.ButtonText = "      POLAR";
+            this.btn_Antarctica.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Antarctica, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Antarctica.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Antarctica.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Antarctica.Iconimage = global::Countries.Properties.Resources.oceania;
+            this.btn_Antarctica.Iconimage_right = null;
+            this.btn_Antarctica.Iconimage_right_Selected = null;
+            this.btn_Antarctica.Iconimage_Selected = null;
+            this.btn_Antarctica.IconMarginLeft = 0;
+            this.btn_Antarctica.IconMarginRight = 0;
+            this.btn_Antarctica.IconRightVisible = true;
+            this.btn_Antarctica.IconRightZoom = 0D;
+            this.btn_Antarctica.IconVisible = true;
+            this.btn_Antarctica.IconZoom = 130D;
+            this.btn_Antarctica.IsTab = false;
+            this.btn_Antarctica.Location = new System.Drawing.Point(0, 545);
+            this.btn_Antarctica.Name = "btn_Antarctica";
+            this.btn_Antarctica.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Antarctica.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_Antarctica.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Antarctica.selected = false;
+            this.btn_Antarctica.Size = new System.Drawing.Size(270, 88);
+            this.btn_Antarctica.TabIndex = 17;
+            this.btn_Antarctica.Text = "      POLAR";
+            this.btn_Antarctica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Antarctica.Textcolor = System.Drawing.Color.White;
+            this.btn_Antarctica.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Antarctica.Click += new System.EventHandler(this.btn_Antarctica_Click);
+            // 
+            // btn_America
+            // 
+            this.btn_America.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_America.BackColor = System.Drawing.Color.Transparent;
+            this.btn_America.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_America.BorderRadius = 0;
+            this.btn_America.ButtonText = "      AMERICA";
+            this.btn_America.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_America, BunifuAnimatorNS.DecorationType.None);
+            this.btn_America.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_America.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_America.Iconimage = global::Countries.Properties.Resources.america;
+            this.btn_America.Iconimage_right = null;
+            this.btn_America.Iconimage_right_Selected = null;
+            this.btn_America.Iconimage_Selected = null;
+            this.btn_America.IconMarginLeft = 0;
+            this.btn_America.IconMarginRight = 0;
+            this.btn_America.IconRightVisible = true;
+            this.btn_America.IconRightZoom = 0D;
+            this.btn_America.IconVisible = true;
+            this.btn_America.IconZoom = 130D;
+            this.btn_America.IsTab = false;
+            this.btn_America.Location = new System.Drawing.Point(0, 451);
+            this.btn_America.Name = "btn_America";
+            this.btn_America.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_America.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_America.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_America.selected = false;
+            this.btn_America.Size = new System.Drawing.Size(270, 88);
+            this.btn_America.TabIndex = 16;
+            this.btn_America.Text = "      AMERICA";
+            this.btn_America.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_America.Textcolor = System.Drawing.Color.White;
+            this.btn_America.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_America.Click += new System.EventHandler(this.btn_America_Click);
+            // 
+            // btn_Africa
+            // 
+            this.btn_Africa.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Africa.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Africa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Africa.BorderRadius = 0;
+            this.btn_Africa.ButtonText = "      AFRICA";
+            this.btn_Africa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Africa, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Africa.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Africa.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Africa.Iconimage = global::Countries.Properties.Resources.africa;
+            this.btn_Africa.Iconimage_right = null;
+            this.btn_Africa.Iconimage_right_Selected = null;
+            this.btn_Africa.Iconimage_Selected = null;
+            this.btn_Africa.IconMarginLeft = 0;
+            this.btn_Africa.IconMarginRight = 0;
+            this.btn_Africa.IconRightVisible = true;
+            this.btn_Africa.IconRightZoom = 0D;
+            this.btn_Africa.IconVisible = true;
+            this.btn_Africa.IconZoom = 130D;
+            this.btn_Africa.IsTab = false;
+            this.btn_Africa.Location = new System.Drawing.Point(0, 357);
+            this.btn_Africa.Name = "btn_Africa";
+            this.btn_Africa.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Africa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_Africa.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Africa.selected = false;
+            this.btn_Africa.Size = new System.Drawing.Size(270, 88);
+            this.btn_Africa.TabIndex = 15;
+            this.btn_Africa.Text = "      AFRICA";
+            this.btn_Africa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Africa.Textcolor = System.Drawing.Color.White;
+            this.btn_Africa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Africa.Click += new System.EventHandler(this.btn_Africa_Click);
+            // 
+            // bunifuFlatButton4
+            // 
+            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton4.BorderRadius = 0;
+            this.bunifuFlatButton4.ButtonText = "      ASIA";
+            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.bunifuFlatButton4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton4.Iconimage")));
+            this.bunifuFlatButton4.Iconimage_right = null;
+            this.bunifuFlatButton4.Iconimage_right_Selected = null;
+            this.bunifuFlatButton4.Iconimage_Selected = null;
+            this.bunifuFlatButton4.IconMarginLeft = 0;
+            this.bunifuFlatButton4.IconMarginRight = 0;
+            this.bunifuFlatButton4.IconRightVisible = true;
+            this.bunifuFlatButton4.IconRightZoom = 0D;
+            this.bunifuFlatButton4.IconVisible = true;
+            this.bunifuFlatButton4.IconZoom = 75D;
+            this.bunifuFlatButton4.IsTab = false;
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(10, 373);
+            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
+            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton4.selected = false;
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(249, 88);
+            this.bunifuFlatButton4.TabIndex = 14;
+            this.bunifuFlatButton4.Text = "      ASIA";
+            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.LightGray;
+            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btn_Asia
+            // 
+            this.btn_Asia.Activecolor = System.Drawing.Color.Transparent;
+            this.btn_Asia.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Asia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Asia.BorderRadius = 0;
+            this.btn_Asia.ButtonText = "      ASIA";
+            this.btn_Asia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimationSelectionBar.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Asia, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Asia.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Asia.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Asia.Iconimage = global::Countries.Properties.Resources.asia;
+            this.btn_Asia.Iconimage_right = null;
+            this.btn_Asia.Iconimage_right_Selected = null;
+            this.btn_Asia.Iconimage_Selected = null;
+            this.btn_Asia.IconMarginLeft = 0;
+            this.btn_Asia.IconMarginRight = 0;
+            this.btn_Asia.IconRightVisible = true;
+            this.btn_Asia.IconRightZoom = 0D;
+            this.btn_Asia.IconVisible = true;
+            this.btn_Asia.IconZoom = 130D;
+            this.btn_Asia.IsTab = false;
+            this.btn_Asia.Location = new System.Drawing.Point(0, 263);
+            this.btn_Asia.Name = "btn_Asia";
+            this.btn_Asia.Normalcolor = System.Drawing.Color.Transparent;
+            this.btn_Asia.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.btn_Asia.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Asia.selected = false;
+            this.btn_Asia.Size = new System.Drawing.Size(270, 88);
+            this.btn_Asia.TabIndex = 13;
+            this.btn_Asia.Text = "      ASIA";
+            this.btn_Asia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Asia.Textcolor = System.Drawing.Color.White;
+            this.btn_Asia.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Asia.Click += new System.EventHandler(this.btn_Asia_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(128, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 20);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "CONTINENTS";
+            // 
+            // LineaSidebar
+            // 
+            this.LineaSidebar.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBarBack.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.LineaSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.LineaSidebar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.LineaSidebar.LineThickness = 1;
+            this.LineaSidebar.Location = new System.Drawing.Point(7, 68);
+            this.LineaSidebar.Name = "LineaSidebar";
+            this.LineaSidebar.Size = new System.Drawing.Size(252, 1);
+            this.LineaSidebar.TabIndex = 8;
+            this.LineaSidebar.Transparency = 255;
+            this.LineaSidebar.Vertical = false;
             // 
             // ProgressBar
             // 
@@ -1190,7 +1152,7 @@
             this.ProgressBar.LineProgressThickness = 8;
             this.ProgressBar.LineThickness = 5;
             this.ProgressBar.Location = new System.Drawing.Point(1136, 0);
-            this.ProgressBar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ProgressBar.Margin = new System.Windows.Forms.Padding(6);
             this.ProgressBar.MaxValue = 100;
             this.ProgressBar.Name = "ProgressBar";
             this.ProgressBar.ProgressBackColor = System.Drawing.Color.White;
@@ -1199,11 +1161,91 @@
             this.ProgressBar.TabIndex = 21;
             this.ProgressBar.Value = 80;
             // 
+            // btn_Maximize
+            // 
+            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Maximize.Image = global::Countries.Properties.Resources.maximize_window_50px;
+            this.btn_Maximize.Location = new System.Drawing.Point(1261, 24);
+            this.btn_Maximize.Name = "btn_Maximize";
+            this.btn_Maximize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Maximize.TabIndex = 9;
+            this.btn_Maximize.TabStop = false;
+            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
+            // 
+            // btn_Restore
+            // 
+            this.btn_Restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Restore.Image = global::Countries.Properties.Resources.restore_window_50px;
+            this.btn_Restore.Location = new System.Drawing.Point(1261, 24);
+            this.btn_Restore.Name = "btn_Restore";
+            this.btn_Restore.Size = new System.Drawing.Size(30, 30);
+            this.btn_Restore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Restore.TabIndex = 8;
+            this.btn_Restore.TabStop = false;
+            this.btn_Restore.Visible = false;
+            this.btn_Restore.Click += new System.EventHandler(this.btn_Restore_Click);
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Minimize.Image = global::Countries.Properties.Resources.minimize_window_50px;
+            this.btn_Minimize.Location = new System.Drawing.Point(1225, 24);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Minimize.TabIndex = 7;
+            this.btn_Minimize.TabStop = false;
+            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Close.Image = global::Countries.Properties.Resources.close_window_50px;
+            this.btn_Close.Location = new System.Drawing.Point(1297, 24);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(30, 30);
+            this.btn_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Close.TabIndex = 6;
+            this.btn_Close.TabStop = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
+            // MenuSidebar
+            // 
+            this.AnimationSelectionBar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.MenuSidebar.Image = ((System.Drawing.Image)(resources.GetObject("MenuSidebar.Image")));
+            this.MenuSidebar.Location = new System.Drawing.Point(43, 25);
+            this.MenuSidebar.Name = "MenuSidebar";
+            this.MenuSidebar.Size = new System.Drawing.Size(35, 35);
+            this.MenuSidebar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MenuSidebar.TabIndex = 2;
+            this.MenuSidebar.TabStop = false;
+            this.MenuSidebar.Click += new System.EventHandler(this.MenuSidebar_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 794);
+            this.ClientSize = new System.Drawing.Size(1350, 849);
             this.Controls.Add(this.Wrapper);
             this.Controls.Add(this.SelectionBarWrapper);
             this.Controls.Add(this.SidebarWrapper);
@@ -1218,21 +1260,21 @@
             this.Text = "Form1";
             this.MenuTop.ResumeLayout(false);
             this.MenuTop.PerformLayout();
+            this.SidebarWrapper.ResumeLayout(false);
+            this.SelectionBarWrapper.ResumeLayout(false);
+            this.Wrapper.ResumeLayout(false);
+            this.PanelChart.ResumeLayout(false);
+            this.PanelChart.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).EndInit();
+            this.SelectionBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).EndInit();
+            this.Sidebar.ResumeLayout(false);
+            this.Sidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).EndInit();
-            this.SidebarWrapper.ResumeLayout(false);
-            this.Sidebar.ResumeLayout(false);
-            this.Sidebar.PerformLayout();
-            this.SelectionBarWrapper.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).EndInit();
-            this.SelectionBar.ResumeLayout(false);
-            this.Wrapper.ResumeLayout(false);
-            this.PanelChart.ResumeLayout(false);
-            this.PanelChart.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1297,6 +1339,7 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label;
         private Bunifu.Framework.UI.BunifuCircleProgressbar ProgressBar;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_Outros;
     }
 }
 

@@ -1,14 +1,18 @@
 ﻿namespace Countries
 {
-    using Countries.Properties;
+    using BunifuAnimatorNS;
+    using Properties;
     using Models;
     using Newtonsoft.Json;
+    using Svg;
     using System;
     using System.Collections.Generic;
     using System.Drawing;
     using System.IO;
     using System.Net;
     using System.Net.Http;
+    using System.Runtime.Versioning;
+    using System.Threading.Tasks;
     using System.Windows.Forms;
 
     public partial class Home : Form
@@ -16,11 +20,13 @@
         public DirectoryInfo Location { get; set; }
         public List<Country> ListCountryName { get; set; }
         public List<Language> ListLanguage { get; set; }
+
         public Home()
         {
             InitializeComponent();
             LoadCountries();
-            
+            Location = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent;
+
         }
 
         private async void LoadCountries()
@@ -43,10 +49,12 @@
             }
 
             var countries = JsonConvert.DeserializeObject<List<Country>>(result);
+
             ListCountryName = countries;
 
-            //Location = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent;
-            
+            await RunDownloadParallelAsync();
+
+            await ConvertAsync();
 
             cb_Countries.DisplayMember = "name";
             ProgressBar.Value = 100;
@@ -213,17 +221,19 @@
 
         private void cb_Countries_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Image imgIndisponivel = Image.FromFile($"{Location.FullName}\\Flags\\indisponivel.bmp");
+
             lbl_CountryLanguages.Text = string.Empty;
 
             foreach (var item in ListCountryName)
             {
                 if (cb_Countries.SelectedItem.ToString() == item.name)
                 {
-                    
+                    pic_Flag.Image = File.Exists($"{Location.FullName}\\Flags\\{item.name}.bmp") ? Image.FromFile($"{Location.FullName}\\Flags\\{item.name}.bmp") : imgIndisponivel;
                     lbl_CountryName.Text = item.name == null ? "N/A" : item.name;
-                    lbl_CountryCapital.Text = item.capital == null ? "N/A" : item.capital;
-                    lbl_CountryRegion.Text = item.region == null ? "N/A" : item.region;
-                    lbl_CountrySubRegion.Text = item.subregion == null ? "N/A" : item.subregion;
+                    lbl_CountryCapital.Text = string.IsNullOrEmpty(item.capital) ? "N/A" : item.capital;
+                    lbl_CountryRegion.Text = string.IsNullOrEmpty(item.region) ? "N/A" : item.region;
+                    lbl_CountrySubRegion.Text = string.IsNullOrEmpty(item.subregion) ? "N/A" : item.subregion;
                     lbl_CountryPopulation.Text = item.population == null ? "N/A" : item.population.ToString();
                     lbl_CountryGiniIndex.Text = item.gini == null ? "N/A" : item.gini.ToString();
                     lbl_CountryNativeName.Text = item.nativeName == null ? "N/A" : item.nativeName;
@@ -233,12 +243,101 @@
                         lbl_CountryLanguages.Text += $"{language.name.ToString()}\n";
 
                     }
-                    
 
                 }
                     
             }
         }
 
+        private void btn_Outros_Click(object sender, EventArgs e)
+        {
+            cb_Countries.Items.Clear();
+            ShowHideSelectionBarWrapper();
+            SelectionBarLocation(10, 673);
+
+            foreach (var item in ListCountryName)
+            {
+                if (string.IsNullOrEmpty(item.region))
+                    cb_Countries.Items.Add(item.name);
+            }
+        }
+
+        private void ConvertSVG(DirectoryInfo Location, Country country)
+        {
+            string path = Location.FullName + "\\Flags\\";
+
+            try
+            {
+                var svgDocument = SvgDocument.Open<SvgDocument>($"{path}{country.name}.svg");
+                svgDocument.ShapeRendering = SvgShapeRendering.Auto;
+
+                var bitmap = svgDocument.Draw(300, 200); //tamanho 100px por 100px
+                bitmap.Save($"{path}{country.name}" + ".bmp");
+
+                bitmap.Dispose();
+
+
+                File.Delete($"{path}{country.name}.svg");
+
+            }
+            catch
+            {
+
+
+
+            }
+
+        }
+
+        private void DownloadSVG(DirectoryInfo Location, Country country)
+        {
+            string path = Location.FullName + "\\Flags\\";
+
+            WebClient webClient = new WebClient();
+
+            try
+            {
+                webClient.DownloadFile(new Uri(country.flag), $"{path}{country.name}.svg");
+            }
+            catch
+            {
+            }
+
+
+
+            webClient.Dispose();
+        }
+
+        private async Task RunDownloadParallelAsync()
+        {
+            List<Task> tasks = new List<Task>();
+
+            foreach (Country pais in ListCountryName)
+            {
+                if (!File.Exists($"{Location.FullName}\\Flags\\{pais.name}.bmp") && !string.IsNullOrEmpty(pais.flag))
+                {
+                    tasks.Add(Task.Run(() => DownloadSVG(Location, pais)));
+                }
+            }
+
+
+            await Task.WhenAll(tasks);
+        }
+
+        private async Task ConvertAsync()
+        {
+            string path = Location.FullName + "\\Flags\\";
+
+            foreach (Country pais in ListCountryName)
+            {
+                if (File.Exists($"{Location.FullName}\\Flags\\{pais.name}.svg"))
+                {
+                    await Task.Run(() => ConvertSVG(Location, pais));
+                }
+
+                pais.caminho = File.Exists($"{path}{pais.name}.bmp") ? path + pais.name + ".bmp" : Location.FullName + "\\Resources\\notavailable.png";
+                
+            }
+        }
     }
 }

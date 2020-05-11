@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace Countries.Models
         public string flag { get; set; }
         public List<object> regionalBlocs { get; set; }
         public string cioc { get; set; }
-        
+        public string caminho { get; set; }
+
     }
 }

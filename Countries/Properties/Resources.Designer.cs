@@ -133,6 +133,16 @@ namespace Countries.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap indisponivel {
+            get {
+                object obj = ResourceManager.GetObject("indisponivel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize_window_50px {
             get {
                 object obj = ResourceManager.GetObject("maximize_window_50px", resourceCulture);
@@ -156,6 +166,16 @@ namespace Countries.Properties {
         internal static System.Drawing.Bitmap oceania {
             get {
                 object obj = ResourceManager.GetObject("oceania", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outros {
+            get {
+                object obj = ResourceManager.GetObject("outros", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
