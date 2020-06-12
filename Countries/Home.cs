@@ -14,50 +14,94 @@
     using System.Runtime.Versioning;
     using System.Threading.Tasks;
     using System.Windows.Forms;
+    using Countries.Servicos;
 
     public partial class Home : Form
     {
         public DirectoryInfo Location { get; set; }
-        public List<Country> ListCountryName { get; set; }
+        //public List<Country> ListCountryName { get; set; } = new List<Country>();
         public List<Language> ListLanguage { get; set; }
+
+        private List<Country> ListCountryName = new List<Country>();
+        private NetWorkService networkService { get; set; }
+        private ApiService apiService { get; set; }
+        private DialogService dialogService;
+        private DataService dataService;
 
         public Home()
         {
             InitializeComponent();
-            LoadCountries();
-            Location = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent;
 
+            networkService = new NetWorkService();
+            apiService = new ApiService();
+            dialogService = new DialogService();
+            Location = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent;
+            dataService = new DataService();
+            LoadCountries();
         }
 
         private async void LoadCountries()
         {
 
-            //bool load;
-            ProgressBar.Value = 0;
+            bool load;
+            
 
-            var client = new HttpClient(); //Fazer ligação via Http
-            client.BaseAddress = new Uri("http://restcountries.eu"); //Endereço base da API
+            lbl_Resultado.Text = "A atualizar informações...";
 
-            var response = await client.GetAsync("/rest/v2/all"); //Controlador da API
-
-            var result = await response.Content.ReadAsStringAsync(); //Guarda as informações da API no objecto result
-
-            if (!response.IsSuccessStatusCode)
+            var connection = networkService.CheckConnection();
+            
+            
+            if (!connection.IsSuccess)
             {
-                MessageBox.Show(response.ReasonPhrase);
+                LoadLocalInfo();
+                load = false;
+            }
+            else
+            {
+                await Task.Run(() => LoadApiInfo());
+                load = true;
+            }
+
+            if(ListCountryName.Count == 0)
+            {
+                lbl_Resultado.Text = "Não há ligação á Internet" + Environment.NewLine + 
+                    "e não foram previamente carregadas as informações" + Environment.NewLine +
+                    "Tente mais tarde!";
                 return;
             }
 
-            var countries = JsonConvert.DeserializeObject<List<Country>>(result);
-
-            ListCountryName = countries;
-
             await RunDownloadParallelAsync();
 
-            await ConvertAsync();
-
             cb_Countries.DisplayMember = "name";
+
+            lbl_Resultado.Text = "Informações atualizadas";
+
+            if (load)
+            {
+                lbl_Status.Text = string.Format("Informações carregadas da Internet em {0:F}", DateTime.Now);
+            }
+            else
+            {
+                lbl_Status.Text = string.Format("Informações carregadas da Base de Dados");
+            }
+
             ProgressBar.Value = 100;
+        }
+
+        private void LoadLocalInfo()
+        {
+            ListCountryName = dataService.GetData();
+        }
+
+        private async Task LoadApiInfo()
+        {
+            ProgressBar.Value = 0;
+
+            var response = await apiService.GetInfo("http://restcountries.eu", "/rest/v2/all");
+
+            ListCountryName = (List<Country>)response.Result;
+            dataService.DeleteData();
+            dataService.SaveData(ListCountryName);
         }
 
         private void MenuSidebar_Click(object sender, EventArgs e)
@@ -221,15 +265,14 @@
 
         private void cb_Countries_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Image imgIndisponivel = Image.FromFile($"{Location.FullName}\\Flags\\indisponivel.bmp");
-
+            
             lbl_CountryLanguages.Text = string.Empty;
 
             foreach (var item in ListCountryName)
             {
                 if (cb_Countries.SelectedItem.ToString() == item.name)
                 {
-                    pic_Flag.Image = File.Exists($"{Location.FullName}\\Flags\\{item.name}.bmp") ? Image.FromFile($"{Location.FullName}\\Flags\\{item.name}.bmp") : imgIndisponivel;
+                    pic_Flag.Source = File.Exists($"{Location.FullName}\\Flags\\{item.name}.svg") ? $"{Location.FullName}\\Flags\\{item.name}.svg" : Location.FullName + "\\Resources\\notavailable.svg";
                     lbl_CountryName.Text = item.name == null ? "N/A" : item.name;
                     lbl_CountryCapital.Text = string.IsNullOrEmpty(item.capital) ? "N/A" : item.capital;
                     lbl_CountryRegion.Text = string.IsNullOrEmpty(item.region) ? "N/A" : item.region;
@@ -260,33 +303,6 @@
                 if (string.IsNullOrEmpty(item.region))
                     cb_Countries.Items.Add(item.name);
             }
-        }
-
-        private void ConvertSVG(DirectoryInfo Location, Country country)
-        {
-            string path = Location.FullName + "\\Flags\\";
-
-            try
-            {
-                var svgDocument = SvgDocument.Open<SvgDocument>($"{path}{country.name}.svg");
-                svgDocument.ShapeRendering = SvgShapeRendering.Auto;
-
-                var bitmap = svgDocument.Draw(300, 200); //tamanho 100px por 100px
-                bitmap.Save($"{path}{country.name}" + ".bmp");
-
-                bitmap.Dispose();
-
-
-                File.Delete($"{path}{country.name}.svg");
-
-            }
-            catch
-            {
-
-
-
-            }
-
         }
 
         private void DownloadSVG(DirectoryInfo Location, Country country)
@@ -324,20 +340,5 @@
             await Task.WhenAll(tasks);
         }
 
-        private async Task ConvertAsync()
-        {
-            string path = Location.FullName + "\\Flags\\";
-
-            foreach (Country pais in ListCountryName)
-            {
-                if (File.Exists($"{Location.FullName}\\Flags\\{pais.name}.svg"))
-                {
-                    await Task.Run(() => ConvertSVG(Location, pais));
-                }
-
-                pais.caminho = File.Exists($"{path}{pais.name}.bmp") ? path + pais.name + ".bmp" : Location.FullName + "\\Resources\\notavailable.png";
-                
-            }
-        }
     }
 }

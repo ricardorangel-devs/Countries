@@ -29,17 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation17 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            BunifuAnimatorNS.Animation animation19 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation18 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation20 = new BunifuAnimatorNS.Animation();
             this.MenuTop = new System.Windows.Forms.Panel();
+            this.lbl_Status = new System.Windows.Forms.Label();
+            this.lbl_Resultado = new System.Windows.Forms.Label();
+            this.btn_Maximize = new System.Windows.Forms.PictureBox();
+            this.btn_Restore = new System.Windows.Forms.PictureBox();
+            this.btn_Minimize = new System.Windows.Forms.PictureBox();
+            this.btn_Close = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.MenuSidebar = new System.Windows.Forms.PictureBox();
+            this.ProgressBar = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_Outros = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Oceania = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Europe = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Antarctica = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_America = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Africa = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btn_Asia = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
             this.SelectionBarWrapper = new System.Windows.Forms.Panel();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.SelectionBar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_MinimizeSelectionSideBarWrapper = new System.Windows.Forms.PictureBox();
+            this.cb_Countries = new System.Windows.Forms.ComboBox();
             this.CurveSidebar = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.AnimationSidebar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Wrapper = new System.Windows.Forms.Panel();
@@ -72,47 +94,28 @@
             this.AnimationSelectionBar = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.AnimationSelectionBarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.CurvePanelChart = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pic_Flag = new System.Windows.Forms.PictureBox();
-            this.SelectionBar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btn_MinimizeSelectionSideBarWrapper = new System.Windows.Forms.PictureBox();
-            this.cb_Countries = new System.Windows.Forms.ComboBox();
-            this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btn_Outros = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Oceania = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Europe = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Antarctica = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_America = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Africa = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btn_Asia = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
-            this.ProgressBar = new Bunifu.Framework.UI.BunifuCircleProgressbar();
-            this.btn_Maximize = new System.Windows.Forms.PictureBox();
-            this.btn_Restore = new System.Windows.Forms.PictureBox();
-            this.btn_Minimize = new System.Windows.Forms.PictureBox();
-            this.btn_Close = new System.Windows.Forms.PictureBox();
-            this.MenuSidebar = new System.Windows.Forms.PictureBox();
+            this.pic_Flag = new SharpVectors.Renderers.Forms.SvgPictureBox();
             this.MenuTop.SuspendLayout();
-            this.SidebarWrapper.SuspendLayout();
-            this.SelectionBarWrapper.SuspendLayout();
-            this.Wrapper.SuspendLayout();
-            this.PanelChart.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).BeginInit();
-            this.SelectionBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).BeginInit();
-            this.Sidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).BeginInit();
+            this.SidebarWrapper.SuspendLayout();
+            this.Sidebar.SuspendLayout();
+            this.SelectionBarWrapper.SuspendLayout();
+            this.SelectionBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).BeginInit();
+            this.Wrapper.SuspendLayout();
+            this.PanelChart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuTop
             // 
             this.MenuTop.BackColor = System.Drawing.Color.Teal;
-            this.MenuTop.Controls.Add(this.ProgressBar);
+            this.MenuTop.Controls.Add(this.lbl_Status);
+            this.MenuTop.Controls.Add(this.lbl_Resultado);
             this.MenuTop.Controls.Add(this.btn_Maximize);
             this.MenuTop.Controls.Add(this.btn_Restore);
             this.MenuTop.Controls.Add(this.btn_Minimize);
@@ -129,6 +132,103 @@
             this.MenuTop.Size = new System.Drawing.Size(1350, 80);
             this.MenuTop.TabIndex = 1;
             // 
+            // lbl_Status
+            // 
+            this.lbl_Status.AutoSize = true;
+            this.lbl_Status.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_Status, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_Status, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_Status, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_Status, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_Status.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Status.ForeColor = System.Drawing.Color.White;
+            this.lbl_Status.Location = new System.Drawing.Point(738, 54);
+            this.lbl_Status.Name = "lbl_Status";
+            this.lbl_Status.Size = new System.Drawing.Size(46, 17);
+            this.lbl_Status.TabIndex = 23;
+            this.lbl_Status.Text = "Status";
+            // 
+            // lbl_Resultado
+            // 
+            this.lbl_Resultado.AutoSize = true;
+            this.lbl_Resultado.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_Resultado, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_Resultado, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_Resultado, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_Resultado, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_Resultado.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Resultado.ForeColor = System.Drawing.Color.White;
+            this.lbl_Resultado.Location = new System.Drawing.Point(738, 9);
+            this.lbl_Resultado.Name = "lbl_Resultado";
+            this.lbl_Resultado.Size = new System.Drawing.Size(72, 17);
+            this.lbl_Resultado.TabIndex = 22;
+            this.lbl_Resultado.Text = "Resultado";
+            // 
+            // btn_Maximize
+            // 
+            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Maximize.Image = global::Countries.Properties.Resources.maximize_window_50px;
+            this.btn_Maximize.Location = new System.Drawing.Point(1261, 24);
+            this.btn_Maximize.Name = "btn_Maximize";
+            this.btn_Maximize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Maximize.TabIndex = 9;
+            this.btn_Maximize.TabStop = false;
+            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
+            // 
+            // btn_Restore
+            // 
+            this.btn_Restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Restore.Image = global::Countries.Properties.Resources.restore_window_50px;
+            this.btn_Restore.Location = new System.Drawing.Point(1261, 24);
+            this.btn_Restore.Name = "btn_Restore";
+            this.btn_Restore.Size = new System.Drawing.Size(30, 30);
+            this.btn_Restore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Restore.TabIndex = 8;
+            this.btn_Restore.TabStop = false;
+            this.btn_Restore.Visible = false;
+            this.btn_Restore.Click += new System.EventHandler(this.btn_Restore_Click);
+            // 
+            // btn_Minimize
+            // 
+            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Minimize.Image = global::Countries.Properties.Resources.minimize_window_50px;
+            this.btn_Minimize.Location = new System.Drawing.Point(1225, 24);
+            this.btn_Minimize.Name = "btn_Minimize";
+            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
+            this.btn_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Minimize.TabIndex = 7;
+            this.btn_Minimize.TabStop = false;
+            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnimationSelectionBar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
+            this.btn_Close.Image = global::Countries.Properties.Resources.close_window_50px;
+            this.btn_Close.Location = new System.Drawing.Point(1297, 24);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(30, 30);
+            this.btn_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_Close.TabIndex = 6;
+            this.btn_Close.TabStop = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -138,11 +238,52 @@
             this.AnimationSelectionBarBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 35);
+            this.label1.Location = new System.Drawing.Point(75, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "DASHBOARD";
+            // 
+            // MenuSidebar
+            // 
+            this.AnimationSelectionBar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
+            this.MenuSidebar.Image = ((System.Drawing.Image)(resources.GetObject("MenuSidebar.Image")));
+            this.MenuSidebar.Location = new System.Drawing.Point(23, 19);
+            this.MenuSidebar.Name = "MenuSidebar";
+            this.MenuSidebar.Size = new System.Drawing.Size(35, 35);
+            this.MenuSidebar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MenuSidebar.TabIndex = 2;
+            this.MenuSidebar.TabStop = false;
+            this.MenuSidebar.Click += new System.EventHandler(this.MenuSidebar_Click);
+            // 
+            // ProgressBar
+            // 
+            this.ProgressBar.animated = false;
+            this.ProgressBar.animationIterval = 1;
+            this.ProgressBar.animationSpeed = 15;
+            this.ProgressBar.BackColor = System.Drawing.Color.Transparent;
+            this.ProgressBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProgressBar.BackgroundImage")));
+            this.AnimationSelectionBarBack.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
+            this.ProgressBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProgressBar.ForeColor = System.Drawing.Color.White;
+            this.ProgressBar.LabelVisible = true;
+            this.ProgressBar.LineProgressThickness = 8;
+            this.ProgressBar.LineThickness = 5;
+            this.ProgressBar.Location = new System.Drawing.Point(15, 4);
+            this.ProgressBar.Margin = new System.Windows.Forms.Padding(6);
+            this.ProgressBar.MaxValue = 100;
+            this.ProgressBar.Name = "ProgressBar";
+            this.ProgressBar.ProgressBackColor = System.Drawing.Color.White;
+            this.ProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ProgressBar.Size = new System.Drawing.Size(61, 61);
+            this.ProgressBar.TabIndex = 21;
+            this.ProgressBar.Value = 0;
             // 
             // SidebarWrapper
             // 
@@ -177,589 +318,6 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // SelectionBarWrapper
-            // 
-            this.SelectionBarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.SelectionBarWrapper.Controls.Add(this.bunifuSeparator3);
-            this.SelectionBarWrapper.Controls.Add(this.SelectionBar);
-            this.AnimationSelectionBarBack.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.SelectionBarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SelectionBarWrapper.Location = new System.Drawing.Point(120, 80);
-            this.SelectionBarWrapper.Name = "SelectionBarWrapper";
-            this.SelectionBarWrapper.Size = new System.Drawing.Size(0, 769);
-            this.SelectionBarWrapper.TabIndex = 3;
-            // 
-            // bunifuSeparator3
-            // 
-            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBarBack.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(7, 9);
-            this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(303, 10);
-            this.bunifuSeparator3.TabIndex = 11;
-            this.bunifuSeparator3.Transparency = 255;
-            this.bunifuSeparator3.Vertical = false;
-            // 
-            // CurveSidebar
-            // 
-            this.CurveSidebar.ElipseRadius = 7;
-            this.CurveSidebar.TargetControl = this.Sidebar;
-            // 
-            // AnimationSidebar
-            // 
-            this.AnimationSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
-            this.AnimationSidebar.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 20;
-            animation3.Padding = new System.Windows.Forms.Padding(30);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.AnimationSidebar.DefaultAnimation = animation3;
-            // 
-            // Wrapper
-            // 
-            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.Wrapper.Controls.Add(this.bunifuSeparator2);
-            this.Wrapper.Controls.Add(this.PanelChart);
-            this.AnimationSelectionBarBack.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
-            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wrapper.Location = new System.Drawing.Point(120, 80);
-            this.Wrapper.Name = "Wrapper";
-            this.Wrapper.Size = new System.Drawing.Size(1230, 769);
-            this.Wrapper.TabIndex = 4;
-            // 
-            // bunifuSeparator2
-            // 
-            this.bunifuSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBarBack.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(9, 9);
-            this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(1569, 10);
-            this.bunifuSeparator2.TabIndex = 11;
-            this.bunifuSeparator2.Transparency = 255;
-            this.bunifuSeparator2.Vertical = false;
-            // 
-            // PanelChart
-            // 
-            this.PanelChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.PanelChart.Controls.Add(this.lbl_CountryLanguages);
-            this.PanelChart.Controls.Add(this.lbl_CountryArea);
-            this.PanelChart.Controls.Add(this.lbl_CountryNativeName);
-            this.PanelChart.Controls.Add(this.label100);
-            this.PanelChart.Controls.Add(this.label55);
-            this.PanelChart.Controls.Add(this.label);
-            this.PanelChart.Controls.Add(this.bunifuSeparator4);
-            this.PanelChart.Controls.Add(this.lbl_CountryGiniIndex);
-            this.PanelChart.Controls.Add(this.lbl_CountryPopulation);
-            this.PanelChart.Controls.Add(this.lbl_CountrySubRegion);
-            this.PanelChart.Controls.Add(this.lbl_CountryRegion);
-            this.PanelChart.Controls.Add(this.lbl_CountryCapital);
-            this.PanelChart.Controls.Add(this.lbl_CountryName);
-            this.PanelChart.Controls.Add(this.label9);
-            this.PanelChart.Controls.Add(this.label8);
-            this.PanelChart.Controls.Add(this.label7);
-            this.PanelChart.Controls.Add(this.label6);
-            this.PanelChart.Controls.Add(this.label5);
-            this.PanelChart.Controls.Add(this.pic_Flag);
-            this.PanelChart.Controls.Add(this.label4);
-            this.AnimationSelectionBarBack.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
-            this.PanelChart.Location = new System.Drawing.Point(9, 24);
-            this.PanelChart.Name = "PanelChart";
-            this.PanelChart.Size = new System.Drawing.Size(710, 733);
-            this.PanelChart.TabIndex = 1;
-            // 
-            // lbl_CountryLanguages
-            // 
-            this.lbl_CountryLanguages.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryLanguages.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryLanguages.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryLanguages.Location = new System.Drawing.Point(15, 554);
-            this.lbl_CountryLanguages.Name = "lbl_CountryLanguages";
-            this.lbl_CountryLanguages.Size = new System.Drawing.Size(179, 117);
-            this.lbl_CountryLanguages.TabIndex = 38;
-            // 
-            // lbl_CountryArea
-            // 
-            this.lbl_CountryArea.AutoSize = true;
-            this.lbl_CountryArea.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryArea.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryArea.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryArea.Location = new System.Drawing.Point(84, 486);
-            this.lbl_CountryArea.Name = "lbl_CountryArea";
-            this.lbl_CountryArea.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryArea.TabIndex = 37;
-            this.lbl_CountryArea.Text = "N/A";
-            // 
-            // lbl_CountryNativeName
-            // 
-            this.lbl_CountryNativeName.AutoSize = true;
-            this.lbl_CountryNativeName.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryNativeName.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryNativeName.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryNativeName.Location = new System.Drawing.Point(166, 450);
-            this.lbl_CountryNativeName.Name = "lbl_CountryNativeName";
-            this.lbl_CountryNativeName.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryNativeName.TabIndex = 36;
-            this.lbl_CountryNativeName.Text = "N/A";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
-            this.label100.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.Color.White;
-            this.label100.Location = new System.Drawing.Point(15, 486);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(63, 23);
-            this.label100.TabIndex = 35;
-            this.label100.Text = "Area:";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
-            this.label55.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.White;
-            this.label55.Location = new System.Drawing.Point(15, 522);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(123, 23);
-            this.label55.TabIndex = 34;
-            this.label55.Text = "Languages:";
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
-            this.label.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.ForeColor = System.Drawing.Color.White;
-            this.label.Location = new System.Drawing.Point(15, 450);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(145, 23);
-            this.label.TabIndex = 30;
-            this.label.Text = "Native Name:";
-            // 
-            // bunifuSeparator4
-            // 
-            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBarBack.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSeparator4.LineThickness = 1;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(334, 208);
-            this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(361, 10);
-            this.bunifuSeparator4.TabIndex = 11;
-            this.bunifuSeparator4.Transparency = 255;
-            this.bunifuSeparator4.Vertical = false;
-            // 
-            // lbl_CountryGiniIndex
-            // 
-            this.lbl_CountryGiniIndex.AutoSize = true;
-            this.lbl_CountryGiniIndex.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryGiniIndex.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryGiniIndex.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryGiniIndex.Location = new System.Drawing.Point(145, 414);
-            this.lbl_CountryGiniIndex.Name = "lbl_CountryGiniIndex";
-            this.lbl_CountryGiniIndex.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryGiniIndex.TabIndex = 29;
-            this.lbl_CountryGiniIndex.Text = "N/A";
-            // 
-            // lbl_CountryPopulation
-            // 
-            this.lbl_CountryPopulation.AutoSize = true;
-            this.lbl_CountryPopulation.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryPopulation.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryPopulation.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryPopulation.Location = new System.Drawing.Point(140, 378);
-            this.lbl_CountryPopulation.Name = "lbl_CountryPopulation";
-            this.lbl_CountryPopulation.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryPopulation.TabIndex = 28;
-            this.lbl_CountryPopulation.Text = "N/A";
-            // 
-            // lbl_CountrySubRegion
-            // 
-            this.lbl_CountrySubRegion.AutoSize = true;
-            this.lbl_CountrySubRegion.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountrySubRegion.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountrySubRegion.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountrySubRegion.Location = new System.Drawing.Point(140, 342);
-            this.lbl_CountrySubRegion.Name = "lbl_CountrySubRegion";
-            this.lbl_CountrySubRegion.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountrySubRegion.TabIndex = 27;
-            this.lbl_CountrySubRegion.Text = "N/A";
-            // 
-            // lbl_CountryRegion
-            // 
-            this.lbl_CountryRegion.AutoSize = true;
-            this.lbl_CountryRegion.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryRegion.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryRegion.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryRegion.Location = new System.Drawing.Point(105, 306);
-            this.lbl_CountryRegion.Name = "lbl_CountryRegion";
-            this.lbl_CountryRegion.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryRegion.TabIndex = 26;
-            this.lbl_CountryRegion.Text = "N/A";
-            // 
-            // lbl_CountryCapital
-            // 
-            this.lbl_CountryCapital.AutoSize = true;
-            this.lbl_CountryCapital.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryCapital.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryCapital.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryCapital.Location = new System.Drawing.Point(108, 270);
-            this.lbl_CountryCapital.Name = "lbl_CountryCapital";
-            this.lbl_CountryCapital.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryCapital.TabIndex = 25;
-            this.lbl_CountryCapital.Text = "N/A";
-            // 
-            // lbl_CountryName
-            // 
-            this.lbl_CountryName.AutoSize = true;
-            this.lbl_CountryName.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
-            this.lbl_CountryName.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_CountryName.ForeColor = System.Drawing.Color.White;
-            this.lbl_CountryName.Location = new System.Drawing.Point(97, 234);
-            this.lbl_CountryName.Name = "lbl_CountryName";
-            this.lbl_CountryName.Size = new System.Drawing.Size(49, 23);
-            this.lbl_CountryName.TabIndex = 24;
-            this.lbl_CountryName.Text = "N/A";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(15, 270);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 23);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Capital:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(15, 306);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 23);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Region:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(15, 342);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(119, 23);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "SubRegion:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(15, 378);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 23);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Population:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(15, 414);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 23);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Gine Index:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(15, 234);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 23);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Name:";
-            // 
-            // AnimationSidebarBack
-            // 
-            this.AnimationSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.AnimationSidebarBack.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimationSidebarBack.DefaultAnimation = animation2;
-            // 
-            // RadioPanelChart
-            // 
-            this.RadioPanelChart.ElipseRadius = 7;
-            this.RadioPanelChart.TargetControl = this;
-            // 
-            // MoveDashboard
-            // 
-            this.MoveDashboard.Fixed = true;
-            this.MoveDashboard.Horizontal = true;
-            this.MoveDashboard.TargetControl = this.MenuTop;
-            this.MoveDashboard.Vertical = true;
-            // 
-            // CurveForm
-            // 
-            this.CurveForm.ElipseRadius = 5;
-            this.CurveForm.TargetControl = this;
-            // 
-            // CurveSelectionBar
-            // 
-            this.CurveSelectionBar.ElipseRadius = 7;
-            this.CurveSelectionBar.TargetControl = this.SelectionBar;
-            // 
-            // AnimationSelectionBar
-            // 
-            this.AnimationSelectionBar.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
-            this.AnimationSelectionBar.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 20;
-            animation4.Padding = new System.Windows.Forms.Padding(30);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.AnimationSelectionBar.DefaultAnimation = animation4;
-            // 
-            // AnimationSelectionBarBack
-            // 
-            this.AnimationSelectionBarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.AnimationSelectionBarBack.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimationSelectionBarBack.DefaultAnimation = animation1;
-            // 
-            // CurvePanelChart
-            // 
-            this.CurvePanelChart.ElipseRadius = 7;
-            this.CurvePanelChart.TargetControl = this.PanelChart;
-            // 
-            // pic_Flag
-            // 
-            this.pic_Flag.BackColor = System.Drawing.Color.White;
-            this.AnimationSelectionBar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
-            this.pic_Flag.Location = new System.Drawing.Point(19, 16);
-            this.pic_Flag.Name = "pic_Flag";
-            this.pic_Flag.Size = new System.Drawing.Size(300, 200);
-            this.pic_Flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_Flag.TabIndex = 17;
-            this.pic_Flag.TabStop = false;
-            // 
-            // SelectionBar
-            // 
-            this.SelectionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.SelectionBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SelectionBar.BackgroundImage")));
-            this.SelectionBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SelectionBar.Controls.Add(this.btn_MinimizeSelectionSideBarWrapper);
-            this.SelectionBar.Controls.Add(this.cb_Countries);
-            this.AnimationSelectionBarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
-            this.SelectionBar.GradientBottomLeft = System.Drawing.Color.Aqua;
-            this.SelectionBar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.SelectionBar.GradientTopLeft = System.Drawing.Color.Black;
-            this.SelectionBar.GradientTopRight = System.Drawing.Color.Black;
-            this.SelectionBar.Location = new System.Drawing.Point(10, 26);
-            this.SelectionBar.Name = "SelectionBar";
-            this.SelectionBar.Quality = 10;
-            this.SelectionBar.Size = new System.Drawing.Size(300, 69);
-            this.SelectionBar.TabIndex = 20;
-            // 
-            // btn_MinimizeSelectionSideBarWrapper
-            // 
-            this.btn_MinimizeSelectionSideBarWrapper.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_MinimizeSelectionSideBarWrapper.BackColor = System.Drawing.Color.Transparent;
-            this.AnimationSelectionBar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
-            this.btn_MinimizeSelectionSideBarWrapper.Image = global::Countries.Properties.Resources.minimize_window_50px;
-            this.btn_MinimizeSelectionSideBarWrapper.Location = new System.Drawing.Point(275, 3);
-            this.btn_MinimizeSelectionSideBarWrapper.Name = "btn_MinimizeSelectionSideBarWrapper";
-            this.btn_MinimizeSelectionSideBarWrapper.Size = new System.Drawing.Size(20, 20);
-            this.btn_MinimizeSelectionSideBarWrapper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_MinimizeSelectionSideBarWrapper.TabIndex = 10;
-            this.btn_MinimizeSelectionSideBarWrapper.TabStop = false;
-            this.btn_MinimizeSelectionSideBarWrapper.Click += new System.EventHandler(this.btn_MinimizeSelectionSideBarWrapper_Click);
-            // 
-            // cb_Countries
-            // 
-            this.AnimationSelectionBar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
-            this.cb_Countries.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Countries.DropDownWidth = 290;
-            this.cb_Countries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_Countries.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Countries.FormattingEnabled = true;
-            this.cb_Countries.Location = new System.Drawing.Point(5, 28);
-            this.cb_Countries.Name = "cb_Countries";
-            this.cb_Countries.Size = new System.Drawing.Size(290, 32);
-            this.cb_Countries.TabIndex = 0;
-            this.cb_Countries.SelectedIndexChanged += new System.EventHandler(this.cb_Countries_SelectedIndexChanged);
-            // 
             // Sidebar
             // 
             this.Sidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -769,6 +327,7 @@
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Sidebar.Controls.Add(this.btn_Outros);
             this.Sidebar.Controls.Add(this.btn_Oceania);
+            this.Sidebar.Controls.Add(this.ProgressBar);
             this.Sidebar.Controls.Add(this.btn_Europe);
             this.Sidebar.Controls.Add(this.btn_Antarctica);
             this.Sidebar.Controls.Add(this.btn_America);
@@ -1134,112 +693,588 @@
             this.LineaSidebar.Transparency = 255;
             this.LineaSidebar.Vertical = false;
             // 
-            // ProgressBar
+            // SelectionBarWrapper
             // 
-            this.ProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProgressBar.animated = true;
-            this.ProgressBar.animationIterval = 1;
-            this.ProgressBar.animationSpeed = 15;
-            this.ProgressBar.BackColor = System.Drawing.Color.Transparent;
-            this.ProgressBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProgressBar.BackgroundImage")));
-            this.AnimationSelectionBarBack.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBar.SetDecoration(this.ProgressBar, BunifuAnimatorNS.DecorationType.None);
-            this.ProgressBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProgressBar.ForeColor = System.Drawing.Color.White;
-            this.ProgressBar.LabelVisible = true;
-            this.ProgressBar.LineProgressThickness = 8;
-            this.ProgressBar.LineThickness = 5;
-            this.ProgressBar.Location = new System.Drawing.Point(1136, 0);
-            this.ProgressBar.Margin = new System.Windows.Forms.Padding(6);
-            this.ProgressBar.MaxValue = 100;
-            this.ProgressBar.Name = "ProgressBar";
-            this.ProgressBar.ProgressBackColor = System.Drawing.Color.White;
-            this.ProgressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
-            this.ProgressBar.Size = new System.Drawing.Size(80, 80);
-            this.ProgressBar.TabIndex = 21;
-            this.ProgressBar.Value = 80;
+            this.SelectionBarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.SelectionBarWrapper.Controls.Add(this.bunifuSeparator3);
+            this.SelectionBarWrapper.Controls.Add(this.SelectionBar);
+            this.AnimationSelectionBarBack.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.SelectionBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.SelectionBarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SelectionBarWrapper.Location = new System.Drawing.Point(120, 80);
+            this.SelectionBarWrapper.Name = "SelectionBarWrapper";
+            this.SelectionBarWrapper.Size = new System.Drawing.Size(0, 769);
+            this.SelectionBarWrapper.TabIndex = 3;
             // 
-            // btn_Maximize
+            // bunifuSeparator3
             // 
-            this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Maximize, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Maximize.Image = global::Countries.Properties.Resources.maximize_window_50px;
-            this.btn_Maximize.Location = new System.Drawing.Point(1261, 24);
-            this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Maximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Maximize.TabIndex = 9;
-            this.btn_Maximize.TabStop = false;
-            this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
+            this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBarBack.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.bunifuSeparator3, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator3.LineThickness = 1;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(7, 9);
+            this.bunifuSeparator3.Name = "bunifuSeparator3";
+            this.bunifuSeparator3.Size = new System.Drawing.Size(303, 10);
+            this.bunifuSeparator3.TabIndex = 11;
+            this.bunifuSeparator3.Transparency = 255;
+            this.bunifuSeparator3.Vertical = false;
             // 
-            // btn_Restore
+            // SelectionBar
             // 
-            this.btn_Restore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Restore, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Restore.Image = global::Countries.Properties.Resources.restore_window_50px;
-            this.btn_Restore.Location = new System.Drawing.Point(1261, 24);
-            this.btn_Restore.Name = "btn_Restore";
-            this.btn_Restore.Size = new System.Drawing.Size(30, 30);
-            this.btn_Restore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Restore.TabIndex = 8;
-            this.btn_Restore.TabStop = false;
-            this.btn_Restore.Visible = false;
-            this.btn_Restore.Click += new System.EventHandler(this.btn_Restore_Click);
+            this.SelectionBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.SelectionBar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SelectionBar.BackgroundImage")));
+            this.SelectionBar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SelectionBar.Controls.Add(this.btn_MinimizeSelectionSideBarWrapper);
+            this.SelectionBar.Controls.Add(this.cb_Countries);
+            this.AnimationSelectionBarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.SelectionBar, BunifuAnimatorNS.DecorationType.None);
+            this.SelectionBar.GradientBottomLeft = System.Drawing.Color.Aqua;
+            this.SelectionBar.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.SelectionBar.GradientTopLeft = System.Drawing.Color.Black;
+            this.SelectionBar.GradientTopRight = System.Drawing.Color.Black;
+            this.SelectionBar.Location = new System.Drawing.Point(10, 26);
+            this.SelectionBar.Name = "SelectionBar";
+            this.SelectionBar.Quality = 10;
+            this.SelectionBar.Size = new System.Drawing.Size(300, 69);
+            this.SelectionBar.TabIndex = 20;
             // 
-            // btn_Minimize
+            // btn_MinimizeSelectionSideBarWrapper
             // 
-            this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Minimize, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Minimize.Image = global::Countries.Properties.Resources.minimize_window_50px;
-            this.btn_Minimize.Location = new System.Drawing.Point(1225, 24);
-            this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(30, 30);
-            this.btn_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Minimize.TabIndex = 7;
-            this.btn_Minimize.TabStop = false;
-            this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
+            this.btn_MinimizeSelectionSideBarWrapper.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_MinimizeSelectionSideBarWrapper.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.btn_MinimizeSelectionSideBarWrapper, BunifuAnimatorNS.DecorationType.None);
+            this.btn_MinimizeSelectionSideBarWrapper.Image = global::Countries.Properties.Resources.minimize_window_50px;
+            this.btn_MinimizeSelectionSideBarWrapper.Location = new System.Drawing.Point(275, 3);
+            this.btn_MinimizeSelectionSideBarWrapper.Name = "btn_MinimizeSelectionSideBarWrapper";
+            this.btn_MinimizeSelectionSideBarWrapper.Size = new System.Drawing.Size(20, 20);
+            this.btn_MinimizeSelectionSideBarWrapper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btn_MinimizeSelectionSideBarWrapper.TabIndex = 10;
+            this.btn_MinimizeSelectionSideBarWrapper.TabStop = false;
+            this.btn_MinimizeSelectionSideBarWrapper.Click += new System.EventHandler(this.btn_MinimizeSelectionSideBarWrapper_Click);
             // 
-            // btn_Close
+            // cb_Countries
             // 
-            this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AnimationSelectionBar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.btn_Close, BunifuAnimatorNS.DecorationType.None);
-            this.btn_Close.Image = global::Countries.Properties.Resources.close_window_50px;
-            this.btn_Close.Location = new System.Drawing.Point(1297, 24);
-            this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(30, 30);
-            this.btn_Close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btn_Close.TabIndex = 6;
-            this.btn_Close.TabStop = false;
-            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
+            this.AnimationSelectionBar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.cb_Countries, BunifuAnimatorNS.DecorationType.None);
+            this.cb_Countries.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Countries.DropDownWidth = 290;
+            this.cb_Countries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cb_Countries.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Countries.FormattingEnabled = true;
+            this.cb_Countries.Location = new System.Drawing.Point(5, 28);
+            this.cb_Countries.Name = "cb_Countries";
+            this.cb_Countries.Size = new System.Drawing.Size(290, 32);
+            this.cb_Countries.TabIndex = 0;
+            this.cb_Countries.SelectedIndexChanged += new System.EventHandler(this.cb_Countries_SelectedIndexChanged);
             // 
-            // MenuSidebar
+            // CurveSidebar
             // 
-            this.AnimationSelectionBar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSelectionBarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebar.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.AnimationSidebarBack.SetDecoration(this.MenuSidebar, BunifuAnimatorNS.DecorationType.None);
-            this.MenuSidebar.Image = ((System.Drawing.Image)(resources.GetObject("MenuSidebar.Image")));
-            this.MenuSidebar.Location = new System.Drawing.Point(43, 25);
-            this.MenuSidebar.Name = "MenuSidebar";
-            this.MenuSidebar.Size = new System.Drawing.Size(35, 35);
-            this.MenuSidebar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.MenuSidebar.TabIndex = 2;
-            this.MenuSidebar.TabStop = false;
-            this.MenuSidebar.Click += new System.EventHandler(this.MenuSidebar_Click);
+            this.CurveSidebar.ElipseRadius = 7;
+            this.CurveSidebar.TargetControl = this.Sidebar;
+            // 
+            // AnimationSidebar
+            // 
+            this.AnimationSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+            this.AnimationSidebar.Cursor = null;
+            animation17.AnimateOnlyDifferences = true;
+            animation17.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.BlindCoeff")));
+            animation17.LeafCoeff = 0F;
+            animation17.MaxTime = 1F;
+            animation17.MinTime = 0F;
+            animation17.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicCoeff")));
+            animation17.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicShift")));
+            animation17.MosaicSize = 20;
+            animation17.Padding = new System.Windows.Forms.Padding(30);
+            animation17.RotateCoeff = 0F;
+            animation17.RotateLimit = 0F;
+            animation17.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.ScaleCoeff")));
+            animation17.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.SlideCoeff")));
+            animation17.TimeCoeff = 0F;
+            animation17.TransparencyCoeff = 0F;
+            this.AnimationSidebar.DefaultAnimation = animation17;
+            // 
+            // Wrapper
+            // 
+            this.Wrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.Wrapper.Controls.Add(this.bunifuSeparator2);
+            this.Wrapper.Controls.Add(this.PanelChart);
+            this.AnimationSelectionBarBack.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.Wrapper, BunifuAnimatorNS.DecorationType.None);
+            this.Wrapper.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Wrapper.Location = new System.Drawing.Point(120, 80);
+            this.Wrapper.Name = "Wrapper";
+            this.Wrapper.Size = new System.Drawing.Size(1230, 769);
+            this.Wrapper.TabIndex = 4;
+            // 
+            // bunifuSeparator2
+            // 
+            this.bunifuSeparator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBarBack.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.bunifuSeparator2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator2.LineThickness = 1;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(9, 9);
+            this.bunifuSeparator2.Name = "bunifuSeparator2";
+            this.bunifuSeparator2.Size = new System.Drawing.Size(1569, 10);
+            this.bunifuSeparator2.TabIndex = 11;
+            this.bunifuSeparator2.Transparency = 255;
+            this.bunifuSeparator2.Vertical = false;
+            // 
+            // PanelChart
+            // 
+            this.PanelChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.PanelChart.Controls.Add(this.pic_Flag);
+            this.PanelChart.Controls.Add(this.lbl_CountryLanguages);
+            this.PanelChart.Controls.Add(this.lbl_CountryArea);
+            this.PanelChart.Controls.Add(this.lbl_CountryNativeName);
+            this.PanelChart.Controls.Add(this.label100);
+            this.PanelChart.Controls.Add(this.label55);
+            this.PanelChart.Controls.Add(this.label);
+            this.PanelChart.Controls.Add(this.bunifuSeparator4);
+            this.PanelChart.Controls.Add(this.lbl_CountryGiniIndex);
+            this.PanelChart.Controls.Add(this.lbl_CountryPopulation);
+            this.PanelChart.Controls.Add(this.lbl_CountrySubRegion);
+            this.PanelChart.Controls.Add(this.lbl_CountryRegion);
+            this.PanelChart.Controls.Add(this.lbl_CountryCapital);
+            this.PanelChart.Controls.Add(this.lbl_CountryName);
+            this.PanelChart.Controls.Add(this.label9);
+            this.PanelChart.Controls.Add(this.label8);
+            this.PanelChart.Controls.Add(this.label7);
+            this.PanelChart.Controls.Add(this.label6);
+            this.PanelChart.Controls.Add(this.label5);
+            this.PanelChart.Controls.Add(this.label4);
+            this.AnimationSelectionBarBack.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.PanelChart, BunifuAnimatorNS.DecorationType.None);
+            this.PanelChart.Location = new System.Drawing.Point(9, 24);
+            this.PanelChart.Name = "PanelChart";
+            this.PanelChart.Size = new System.Drawing.Size(710, 733);
+            this.PanelChart.TabIndex = 1;
+            // 
+            // lbl_CountryLanguages
+            // 
+            this.lbl_CountryLanguages.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryLanguages, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryLanguages.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryLanguages.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryLanguages.Location = new System.Drawing.Point(15, 554);
+            this.lbl_CountryLanguages.Name = "lbl_CountryLanguages";
+            this.lbl_CountryLanguages.Size = new System.Drawing.Size(179, 117);
+            this.lbl_CountryLanguages.TabIndex = 38;
+            // 
+            // lbl_CountryArea
+            // 
+            this.lbl_CountryArea.AutoSize = true;
+            this.lbl_CountryArea.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryArea, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryArea.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryArea.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryArea.Location = new System.Drawing.Point(84, 486);
+            this.lbl_CountryArea.Name = "lbl_CountryArea";
+            this.lbl_CountryArea.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryArea.TabIndex = 37;
+            this.lbl_CountryArea.Text = "N/A";
+            // 
+            // lbl_CountryNativeName
+            // 
+            this.lbl_CountryNativeName.AutoSize = true;
+            this.lbl_CountryNativeName.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryNativeName, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryNativeName.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryNativeName.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryNativeName.Location = new System.Drawing.Point(166, 450);
+            this.lbl_CountryNativeName.Name = "lbl_CountryNativeName";
+            this.lbl_CountryNativeName.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryNativeName.TabIndex = 36;
+            this.lbl_CountryNativeName.Text = "N/A";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label100, BunifuAnimatorNS.DecorationType.None);
+            this.label100.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.Color.White;
+            this.label100.Location = new System.Drawing.Point(15, 486);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(63, 23);
+            this.label100.TabIndex = 35;
+            this.label100.Text = "Area:";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label55, BunifuAnimatorNS.DecorationType.None);
+            this.label55.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.White;
+            this.label55.Location = new System.Drawing.Point(15, 522);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(123, 23);
+            this.label55.TabIndex = 34;
+            this.label55.Text = "Languages:";
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label, BunifuAnimatorNS.DecorationType.None);
+            this.label.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.White;
+            this.label.Location = new System.Drawing.Point(15, 450);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(145, 23);
+            this.label.TabIndex = 30;
+            this.label.Text = "Native Name:";
+            // 
+            // bunifuSeparator4
+            // 
+            this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBarBack.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBar.SetDecoration(this.bunifuSeparator4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator4.LineThickness = 1;
+            this.bunifuSeparator4.Location = new System.Drawing.Point(334, 208);
+            this.bunifuSeparator4.Name = "bunifuSeparator4";
+            this.bunifuSeparator4.Size = new System.Drawing.Size(361, 10);
+            this.bunifuSeparator4.TabIndex = 11;
+            this.bunifuSeparator4.Transparency = 255;
+            this.bunifuSeparator4.Vertical = false;
+            // 
+            // lbl_CountryGiniIndex
+            // 
+            this.lbl_CountryGiniIndex.AutoSize = true;
+            this.lbl_CountryGiniIndex.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryGiniIndex, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryGiniIndex.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryGiniIndex.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryGiniIndex.Location = new System.Drawing.Point(145, 414);
+            this.lbl_CountryGiniIndex.Name = "lbl_CountryGiniIndex";
+            this.lbl_CountryGiniIndex.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryGiniIndex.TabIndex = 29;
+            this.lbl_CountryGiniIndex.Text = "N/A";
+            // 
+            // lbl_CountryPopulation
+            // 
+            this.lbl_CountryPopulation.AutoSize = true;
+            this.lbl_CountryPopulation.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryPopulation, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryPopulation.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryPopulation.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryPopulation.Location = new System.Drawing.Point(140, 378);
+            this.lbl_CountryPopulation.Name = "lbl_CountryPopulation";
+            this.lbl_CountryPopulation.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryPopulation.TabIndex = 28;
+            this.lbl_CountryPopulation.Text = "N/A";
+            // 
+            // lbl_CountrySubRegion
+            // 
+            this.lbl_CountrySubRegion.AutoSize = true;
+            this.lbl_CountrySubRegion.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountrySubRegion, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountrySubRegion.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountrySubRegion.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountrySubRegion.Location = new System.Drawing.Point(140, 342);
+            this.lbl_CountrySubRegion.Name = "lbl_CountrySubRegion";
+            this.lbl_CountrySubRegion.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountrySubRegion.TabIndex = 27;
+            this.lbl_CountrySubRegion.Text = "N/A";
+            // 
+            // lbl_CountryRegion
+            // 
+            this.lbl_CountryRegion.AutoSize = true;
+            this.lbl_CountryRegion.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryRegion, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryRegion.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryRegion.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryRegion.Location = new System.Drawing.Point(105, 306);
+            this.lbl_CountryRegion.Name = "lbl_CountryRegion";
+            this.lbl_CountryRegion.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryRegion.TabIndex = 26;
+            this.lbl_CountryRegion.Text = "N/A";
+            // 
+            // lbl_CountryCapital
+            // 
+            this.lbl_CountryCapital.AutoSize = true;
+            this.lbl_CountryCapital.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryCapital, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryCapital.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryCapital.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryCapital.Location = new System.Drawing.Point(108, 270);
+            this.lbl_CountryCapital.Name = "lbl_CountryCapital";
+            this.lbl_CountryCapital.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryCapital.TabIndex = 25;
+            this.lbl_CountryCapital.Text = "N/A";
+            // 
+            // lbl_CountryName
+            // 
+            this.lbl_CountryName.AutoSize = true;
+            this.lbl_CountryName.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.lbl_CountryName, BunifuAnimatorNS.DecorationType.None);
+            this.lbl_CountryName.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CountryName.ForeColor = System.Drawing.Color.White;
+            this.lbl_CountryName.Location = new System.Drawing.Point(97, 234);
+            this.lbl_CountryName.Name = "lbl_CountryName";
+            this.lbl_CountryName.Size = new System.Drawing.Size(49, 23);
+            this.lbl_CountryName.TabIndex = 24;
+            this.lbl_CountryName.Text = "N/A";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label9, BunifuAnimatorNS.DecorationType.None);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(15, 270);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 23);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Capital:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(15, 306);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 23);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Region:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(15, 342);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 23);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "SubRegion:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(15, 378);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 23);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Population:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(15, 414);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 23);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Gine Index:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.AnimationSelectionBar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(15, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 23);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Name:";
+            // 
+            // AnimationSidebarBack
+            // 
+            this.AnimationSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.AnimationSidebarBack.Cursor = null;
+            animation19.AnimateOnlyDifferences = true;
+            animation19.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation19.BlindCoeff")));
+            animation19.LeafCoeff = 0F;
+            animation19.MaxTime = 1F;
+            animation19.MinTime = 0F;
+            animation19.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation19.MosaicCoeff")));
+            animation19.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation19.MosaicShift")));
+            animation19.MosaicSize = 0;
+            animation19.Padding = new System.Windows.Forms.Padding(0);
+            animation19.RotateCoeff = 0F;
+            animation19.RotateLimit = 0F;
+            animation19.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation19.ScaleCoeff")));
+            animation19.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation19.SlideCoeff")));
+            animation19.TimeCoeff = 0F;
+            animation19.TransparencyCoeff = 0F;
+            this.AnimationSidebarBack.DefaultAnimation = animation19;
+            // 
+            // RadioPanelChart
+            // 
+            this.RadioPanelChart.ElipseRadius = 7;
+            this.RadioPanelChart.TargetControl = this;
+            // 
+            // MoveDashboard
+            // 
+            this.MoveDashboard.Fixed = true;
+            this.MoveDashboard.Horizontal = true;
+            this.MoveDashboard.TargetControl = this.MenuTop;
+            this.MoveDashboard.Vertical = true;
+            // 
+            // CurveForm
+            // 
+            this.CurveForm.ElipseRadius = 5;
+            this.CurveForm.TargetControl = this;
+            // 
+            // CurveSelectionBar
+            // 
+            this.CurveSelectionBar.ElipseRadius = 7;
+            this.CurveSelectionBar.TargetControl = this.SelectionBar;
+            // 
+            // AnimationSelectionBar
+            // 
+            this.AnimationSelectionBar.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+            this.AnimationSelectionBar.Cursor = null;
+            animation18.AnimateOnlyDifferences = true;
+            animation18.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.BlindCoeff")));
+            animation18.LeafCoeff = 0F;
+            animation18.MaxTime = 1F;
+            animation18.MinTime = 0F;
+            animation18.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicCoeff")));
+            animation18.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicShift")));
+            animation18.MosaicSize = 20;
+            animation18.Padding = new System.Windows.Forms.Padding(30);
+            animation18.RotateCoeff = 0F;
+            animation18.RotateLimit = 0F;
+            animation18.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.ScaleCoeff")));
+            animation18.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.SlideCoeff")));
+            animation18.TimeCoeff = 0F;
+            animation18.TransparencyCoeff = 0F;
+            this.AnimationSelectionBar.DefaultAnimation = animation18;
+            // 
+            // AnimationSelectionBarBack
+            // 
+            this.AnimationSelectionBarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.AnimationSelectionBarBack.Cursor = null;
+            animation20.AnimateOnlyDifferences = true;
+            animation20.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation20.BlindCoeff")));
+            animation20.LeafCoeff = 0F;
+            animation20.MaxTime = 1F;
+            animation20.MinTime = 0F;
+            animation20.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation20.MosaicCoeff")));
+            animation20.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation20.MosaicShift")));
+            animation20.MosaicSize = 0;
+            animation20.Padding = new System.Windows.Forms.Padding(0);
+            animation20.RotateCoeff = 0F;
+            animation20.RotateLimit = 0F;
+            animation20.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation20.ScaleCoeff")));
+            animation20.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation20.SlideCoeff")));
+            animation20.TimeCoeff = 0F;
+            animation20.TransparencyCoeff = 0F;
+            this.AnimationSelectionBarBack.DefaultAnimation = animation20;
+            // 
+            // CurvePanelChart
+            // 
+            this.CurvePanelChart.ElipseRadius = 7;
+            this.CurvePanelChart.TargetControl = this.PanelChart;
+            // 
+            // pic_Flag
+            // 
+            this.pic_Flag.BackColor = System.Drawing.Color.White;
+            this.AnimationSelectionBar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSidebar.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.AnimationSelectionBarBack.SetDecoration(this.pic_Flag, BunifuAnimatorNS.DecorationType.None);
+            this.pic_Flag.Location = new System.Drawing.Point(19, 7);
+            this.pic_Flag.MaximumSize = new System.Drawing.Size(300, 200);
+            this.pic_Flag.Name = "pic_Flag";
+            this.pic_Flag.Size = new System.Drawing.Size(300, 200);
+            this.pic_Flag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_Flag.TabIndex = 39;
             // 
             // Home
             // 
@@ -1260,21 +1295,21 @@
             this.Text = "Form1";
             this.MenuTop.ResumeLayout(false);
             this.MenuTop.PerformLayout();
-            this.SidebarWrapper.ResumeLayout(false);
-            this.SelectionBarWrapper.ResumeLayout(false);
-            this.Wrapper.ResumeLayout(false);
-            this.PanelChart.ResumeLayout(false);
-            this.PanelChart.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).EndInit();
-            this.SelectionBar.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).EndInit();
-            this.Sidebar.ResumeLayout(false);
-            this.Sidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Maximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Restore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_Close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).EndInit();
+            this.SidebarWrapper.ResumeLayout(false);
+            this.Sidebar.ResumeLayout(false);
+            this.Sidebar.PerformLayout();
+            this.SelectionBarWrapper.ResumeLayout(false);
+            this.SelectionBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_MinimizeSelectionSideBarWrapper)).EndInit();
+            this.Wrapper.ResumeLayout(false);
+            this.PanelChart.ResumeLayout(false);
+            this.PanelChart.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_Flag)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1315,7 +1350,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pic_Flag;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuElipse CurveSelectionBar;
         private BunifuAnimatorNS.BunifuTransition AnimationSelectionBar;
@@ -1340,6 +1374,9 @@
         private System.Windows.Forms.Label label;
         private Bunifu.Framework.UI.BunifuCircleProgressbar ProgressBar;
         private Bunifu.Framework.UI.BunifuFlatButton btn_Outros;
+        private System.Windows.Forms.Label lbl_Resultado;
+        private System.Windows.Forms.Label lbl_Status;
+        private SharpVectors.Renderers.Forms.SvgPictureBox pic_Flag;
     }
 }
 

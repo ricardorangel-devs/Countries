@@ -59,6 +59,30 @@
     <Reference Include="NReco.ImageGenerator.LT, Version=1.1.3.0, Culture=neutral, PublicKeyToken=0ef6c878974c90ac, processorArchitecture=MSIL">
       <HintPath>..\packages\NReco.ImageGenerator.LT.1.1.3\lib\net45\NReco.ImageGenerator.LT.dll</HintPath>
     </Reference>
+    <Reference Include="SharpVectors.Converters.Wpf, Version=1.6.0.0, Culture=neutral, PublicKeyToken=b532964b8548be77, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Converters.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=7407205e337c98ef, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Css, Version=1.6.0.0, Culture=neutral, PublicKeyToken=7a46e3f532fdb787, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Css.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Dom, Version=1.6.0.0, Culture=neutral, PublicKeyToken=517340b6277b1a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Dom.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Model, Version=1.6.0.0, Culture=neutral, PublicKeyToken=2236cfc76b505845, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Rendering.Gdi, Version=1.6.0.0, Culture=neutral, PublicKeyToken=03902092284347e3, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Rendering.Gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Rendering.Wpf, Version=1.6.0.0, Culture=neutral, PublicKeyToken=d0902381100df30e, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Rendering.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Runtime.Wpf, Version=1.6.0.0, Culture=neutral, PublicKeyToken=d16e717f0a981fb9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.Reloaded.1.6.0\lib\net47\SharpVectors.Runtime.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Svg, Version=3.1.0.0, Culture=neutral, PublicKeyToken=12a0bac221edeae2, processorArchitecture=MSIL">
       <HintPath>..\packages\Svg.3.1.1\lib\net452\Svg.dll</HintPath>
     </Reference>
@@ -100,9 +124,14 @@
     <Compile Include="Models\Country.cs" />
     <Compile Include="Models\Currency.cs" />
     <Compile Include="Models\Language.cs" />
+    <Compile Include="Models\Response.cs" />
     <Compile Include="Models\Translations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicos\ApiService.cs" />
+    <Compile Include="Servicos\DataService.cs" />
+    <Compile Include="Servicos\DialogService.cs" />
+    <Compile Include="Servicos\NetWorkService.cs" />
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +200,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\indisponivel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notavailable.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
